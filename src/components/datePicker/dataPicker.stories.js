@@ -17,7 +17,7 @@ export const actions = {
 };
 
 storiesOf('Popover時間選擇器', module)
-  .addDecorator(story => <div style={{ padding: '25px' }}>{story()}</div>)
+  .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
   .add('說明文件', doc(readme))
   .add('<DatePicker> 編輯狀態', () => <DatePicker
       startYear={data.startYear}
