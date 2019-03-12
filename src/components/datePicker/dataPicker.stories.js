@@ -18,8 +18,8 @@ export const actions = {
 
 storiesOf('Popover時間選擇器', module)
   .addDecorator(story => <div style={{ padding: '25px' }}>{story()}</div>)
-  .add('使用文件', doc(readme))
-  .add('編輯狀態', () => <DatePicker
+  .add('說明文件', doc(readme))
+  .add('<DatePicker> 編輯狀態', () => <DatePicker
       startYear={data.startYear}
       startMonth={data.startMonth}
       endYear={data.endYear}

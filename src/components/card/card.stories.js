@@ -20,15 +20,52 @@ export const data = {
 
 storiesOf('卡片', module)
   .addDecorator(story => <div style={{ padding: '25px' }}>{story()}</div>)
-  .add('使用文件', doc(readme))
-  .add('default', () =>
-    <Card
-      key="1"
-      link={data.link}
-      linkTitle={data.linkTitle}
-      userImage={data.userImage}
-      bgImage={data.bgImage}
-      userName={data.userName}
-      introduction={data.introduction}
-    />
+  .add('說明文件', doc(readme))
+  .add('<Card>', () =>
+    <div style={{
+      flexWrap: 'wrap',
+      display: 'flex',
+      alignContent: 'flex-start',
+      paddingBottom: '40px',
+      width: '100%',
+      backgroundColor: '#f6f6f6',
+      minHeight: '270px'
+    }}>
+      <Card
+        key="1"
+        link={data.link}
+        linkTitle={data.linkTitle}
+        userImage={data.userImage}
+        bgImage={data.bgImage}
+        userName={data.userName}
+        introduction={data.introduction}
+      />
+      <Card
+        key="2"
+        link={data.link}
+        linkTitle={data.linkTitle}
+        userImage={data.userImage}
+        bgImage={data.bgImage}
+        userName={data.userName}
+        introduction={data.introduction}
+      />
+      <Card
+        key="3"
+        link={data.link}
+        linkTitle={data.linkTitle}
+        userImage={data.userImage}
+        bgImage={data.bgImage}
+        userName={data.userName}
+        introduction={data.introduction}
+      />
+      <Card
+        key="4"
+        link={data.link}
+        linkTitle={data.linkTitle}
+        userImage={data.userImage}
+        bgImage={data.bgImage}
+        userName={data.userName}
+        introduction={data.introduction}
+      />
+   </div>
   );

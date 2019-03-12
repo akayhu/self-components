@@ -1,4 +1,4 @@
-# <DatePicker> component 使用說明
+# DatePicker Component 使用說明
 
 需安裝 [ant](https://ant.design/index-cn) 第三方套件
 ```

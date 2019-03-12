@@ -45,14 +45,14 @@ class Card extends Component {
 						/>
 					</div>
 				</a>
-				<div className="search-block-footer">
+				{/* <div className="search-block-footer">
 					<hr className="bottom" />
 					<div className="search-block-interactive">
 						<div className="watching">
 							<i className="icon-icon-icon_watching" /> 9527
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		);
 	}
