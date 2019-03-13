@@ -10,7 +10,7 @@ class TaskList extends Component {
     tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
     onPinTask: PropTypes.func.isRequired,
     onArchiveTask: PropTypes.func.isRequired,
-  }
+  };
 
   static defaultProps = {
 		loading: false,

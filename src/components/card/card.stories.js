@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-// import { action } from '@storybook/addon-actions';
 import Card from './card';
 import readme from './readme.md';
 import selfImage from './image/cover.jpg';
@@ -55,7 +54,7 @@ export const data = [
 
 storiesOf('小名片', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
-  .add('<Card> 小名片列表', () =>
+  .add('<Card> 小名片列表', () => 
     <div style={{
       flexWrap: 'wrap',
       display: 'flex',

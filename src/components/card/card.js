@@ -4,8 +4,6 @@ import './card.css';
 
 class Card extends Component {
 	render() {
-    if (!this.props) return null;
-
 		const {
       link,
       linkTitle,
@@ -52,16 +50,14 @@ class Card extends Component {
 }
 
 Card.propTypes = {
-  /** Doc API 檔案唯一識別碼 */
   link: PropTypes.string,
-  /** 多媒體檔案類型，參見 config/document 的 mediaTypeMap */
   linkTitle: PropTypes.string,
   defultUserImage: PropTypes.string,
   defultBgImage: PropTypes.string,
-  userName: PropTypes.string,
+  userName: PropTypes.string.isRequired,
   userImage: PropTypes.string,
   bgImage: PropTypes.string,
-  introduction: PropTypes.string
+  introduction: PropTypes.string.isRequired
 };
 
 export default Card;
