@@ -1,6 +1,7 @@
 import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withPropsTable } from "storybook-addon-react-docgen";
 import { withOptions } from "@storybook/addon-options";
+import myTheme from './myTheme';
 import 'antd/dist/antd.css';
 import './style.css';
 
@@ -13,6 +14,9 @@ const loadStories = () => {
 addDecorator(withPropsTable);
 
 addParameters({
+  options: {
+    theme: myTheme,
+  },
   backgrounds: [
     { name: 'twitter', value: '#00aced', default: true },
     { name: 'facebook', value: '#3b5998' },

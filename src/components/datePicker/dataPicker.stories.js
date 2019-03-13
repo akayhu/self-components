@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { doc } from 'storybook-readme';
 import DatePicker from './datePicker';
 import readme from './readme.md';
 
@@ -19,7 +18,6 @@ export const actions = {
 
 storiesOf('Popover時間選擇器', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
-  .add('說明文件', doc(readme))
   .add('<DatePicker> 編輯狀態', () => <DatePicker
       key={data.id}
       startYear={data.startYear}
@@ -29,5 +27,8 @@ storiesOf('Popover時間選擇器', module)
       onUpdateData={actions.submitEditable}
       editable={true}
       title="時間"
-    />
+    />,
+    {
+      notes: { markdown: readme },
+    }
   );

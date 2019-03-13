@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { doc } from 'storybook-readme';
 import readme from './readme.md';
 import Task from './task';
 
@@ -19,7 +18,6 @@ export const actions = {
 
 storiesOf('Task', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
-  .add('說明文件', doc(readme))
-  .add('default', () => <Task task={task} {...actions} />)
-  .add('pinned', () => <Task task={{ ...task, state: 'TASK_PINNED' }} {...actions} />)
-  .add('archived', () => <Task task={{ ...task, state: 'TASK_ARCHIVED' }} {...actions} />);
+  .add('default', () => <Task task={task} {...actions} />, {notes: { markdown: readme }})
+  .add('pinned', () => <Task task={{ ...task, state: 'TASK_PINNED' }} {...actions} />, {notes: { markdown: readme }})
+  .add('archived', () => <Task task={{ ...task, state: 'TASK_ARCHIVED' }} {...actions} />, {notes: { markdown: readme }});

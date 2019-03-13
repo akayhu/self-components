@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import TaskList from './taskList';
-import { doc } from 'storybook-readme';
 import readme from './readme.md';
 import { task, actions } from '../task/task.stories';
 
@@ -21,8 +20,7 @@ export const withPinnedTasks = [
 
 storiesOf('TaskList', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
-  .add('說明文件', doc(readme))
-  .add('default', () => <TaskList tasks={defaultTasks} {...actions} />)
-  .add('withPinnedTasks', () => <TaskList tasks={withPinnedTasks} {...actions} />)
-  .add('loading', () => <TaskList loading tasks={[]} {...actions} />)
-  .add('empty', () => <TaskList tasks={[]} {...actions} />);
+  .add('default', () => <TaskList tasks={defaultTasks} {...actions} />, {notes: { markdown: readme }})
+  .add('withPinnedTasks', () => <TaskList tasks={withPinnedTasks} {...actions} />, {notes: { markdown: readme }})
+  .add('loading', () => <TaskList loading tasks={[]} {...actions} />, {notes: { markdown: readme }})
+  .add('empty', () => <TaskList tasks={[]} {...actions} />, {notes: { markdown: readme }});
