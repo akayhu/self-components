@@ -5,7 +5,7 @@ class Task extends Component {
 
   static propTypes = {
     task: PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       state: PropTypes.string.isRequired,
     }),
@@ -32,7 +32,7 @@ class Task extends Component {
 
         <div className="actions" onClick={event => event.stopPropagation()}>
           {state !== 'TASK_ARCHIVED' && (
-            <a href="javascript:void(0)" onClick={() => onPinTask(id)}>
+            <a href="https://www.google.com" onClick={() => onPinTask(id)}>
               <span className={`icon-star`} />
             </a>
           )}

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './card.css';
 
 class Card extends Component {
 	render() {
-		if (!this.props) return null;
+    if (!this.props) return null;
+
 		const {
       link,
       linkTitle,
@@ -16,28 +18,27 @@ class Card extends Component {
 		} = this.props;
 
 		return (
-			<div className="search-block-main" key="1">
+			<div className="card-main">
 				<a
 					href={link}
 					title={linkTitle}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<div className="search-block-bg">
+					<div className="card-bg">
 						<img
 							src={bgImage || defultBgImage}
 							alt="cover"
 						/>
-						<div className="searchAvatar">
+						<div className="cardAvatar">
 							<img
 								src={userImage ||defultUserImage}
 								alt="Avatar"
 							/>
 						</div>
 					</div>
-					<div className="search-block-content">
+					<div className="card-content">
 						<div className="username">{userName || '使用者名稱'}</div>
-						{/* <div className="jobTitle">{title || '職稱'}</div> */}
 						<hr className="top" />
 						<p
 							className="summary"
@@ -45,17 +46,22 @@ class Card extends Component {
 						/>
 					</div>
 				</a>
-				{/* <div className="search-block-footer">
-					<hr className="bottom" />
-					<div className="search-block-interactive">
-						<div className="watching">
-							<i className="icon-icon-icon_watching" /> 9527
-						</div>
-					</div>
-				</div> */}
 			</div>
 		);
 	}
 }
+
+Card.propTypes = {
+  /** Doc API 檔案唯一識別碼 */
+  link: PropTypes.string,
+  /** 多媒體檔案類型，參見 config/document 的 mediaTypeMap */
+  linkTitle: PropTypes.string,
+  defultUserImage: PropTypes.string,
+  defultBgImage: PropTypes.string,
+  userName: PropTypes.string,
+  userImage: PropTypes.string,
+  bgImage: PropTypes.string,
+  introduction: PropTypes.string
+};
 
 export default Card;

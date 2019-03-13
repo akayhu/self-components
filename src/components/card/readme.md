@@ -8,7 +8,3 @@
   align-content: flex-start;
 }
 ```
-
-TODO：
-- Component 待優化
-- Prop Types 待補上

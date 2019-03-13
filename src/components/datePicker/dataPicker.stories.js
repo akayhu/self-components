@@ -6,6 +6,7 @@ import DatePicker from './datePicker';
 import readme from './readme.md';
 
 export const data = {
+  id: 1,
   startYear: 1998,
   startMonth: 6,
   endYear: 2015,
@@ -20,6 +21,7 @@ storiesOf('Popover時間選擇器', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
   .add('說明文件', doc(readme))
   .add('<DatePicker> 編輯狀態', () => <DatePicker
+      key={data.id}
       startYear={data.startYear}
       startMonth={data.startMonth}
       endYear={data.endYear}
