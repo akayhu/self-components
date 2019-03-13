@@ -1,4 +1,4 @@
-import { configure, addDecorator } from "@storybook/react";
+import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withPropsTable } from "storybook-addon-react-docgen";
 import { withOptions } from "@storybook/addon-options";
 import 'antd/dist/antd.css';
@@ -11,6 +11,13 @@ const loadStories = () => {
 
 // 爬取 propTypes
 addDecorator(withPropsTable);
+
+addParameters({
+  backgrounds: [
+    { name: 'twitter', value: '#00aced', default: true },
+    { name: 'facebook', value: '#3b5998' },
+  ],
+});
 
 // 調整 storybook 外觀
 addDecorator(

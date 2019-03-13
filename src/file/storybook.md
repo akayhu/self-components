@@ -1,19 +1,27 @@
 # 安裝 Storybook 環境
 
-## 目前 Storybook 版本
+## 『自己的 Storybook』安裝相關 Storybook 套件版號
 
-```jacascript
+```javascript
 "devDependencies": {
-  "@storybook/addon-actions": "^4.1.3",
-  "@storybook/addon-knobs": "^4.1.11",
-  "@storybook/addon-links": "^4.1.3",
-  "@storybook/addon-options": "^4.1.11",
-  "@storybook/addon-viewport": "^4.1.11",
-  "@storybook/addons": "^4.1.3",
-  "@storybook/react": "^4.1.3",
-  "storybook-addon-react-docgen": "^1.0.4",
+  "@storybook/addon-actions": "^5.0.1",
+  "@storybook/addon-backgrounds": "^5.0.1",
+  "@storybook/addon-centered": "^5.0.1",
+  "@storybook/addon-jest": "^5.0.1",
+  "@storybook/addon-knobs": "^5.0.1",
+  "@storybook/addon-links": "^5.0.1",
+  "@storybook/addon-notes": "^5.0.1",
+  "@storybook/addon-options": "^5.0.1",
+  "@storybook/addon-storyshots": "^5.0.1",
+  "@storybook/addon-storysource": "^5.0.1",
+  "@storybook/addon-viewport": "^5.0.1",
+  "@storybook/addons": "^5.0.1",
+  "@storybook/react": "^5.0.1",
+  "storybook-addon-react-docgen": "^1.1.5",
   "storybook-readme": "^4.0.5"
 }
+
+// 目前 "storybook-addon-react-docgen": "^1.1.5" 套件 console.log 會噴錯，導致 propType 與 description 會抓不到資料。
 ```
 
 ## Storybook安裝
