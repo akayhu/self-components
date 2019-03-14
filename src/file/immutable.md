@@ -2,7 +2,7 @@
 
 [Immutable.js](https://github.com/immutable-js/immutable-js) 為 FB 的開源專案，它提供了 7 種常用的資料結構 `(List, Stack, Map, OrderedMap, Set, OrderedSet, Record)` ，而且 api 是 FP style 再加上類似 mutable，讓它相當好上手。
 
-```javascript
+```js
 // 將 map1.b 改為 87
 const { Map } = Immutable;
 const map1 = Map({ a: 1, b: 2, c: 3 });
@@ -16,7 +16,7 @@ console.log(
 );
 ```
 
-```javascript
+```js
 // 過濾掉奇數
 // 加 1
 // 並加總

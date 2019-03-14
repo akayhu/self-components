@@ -10,7 +10,7 @@
 
 ### 1. 對多個標準使用Array.includes
 
-```javascript
+```js
 // condition
 function test(fruit) {
   if (fruit == 'apple' || fruit == 'strawberry') {
@@ -23,7 +23,7 @@ function test(fruit) {
 
 - 我們可以使用[（Array.includes）](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)重寫上面的條件`Array.includes`
 
-```javascript
+```js
 function test(fruit) {
   // extract conditions to array
   const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
@@ -42,7 +42,7 @@ function test(fruit) {
 - 如果沒有提供水果，拋出錯誤
 - 如果超過10，則接受並打印水果數量。
 
-```javascript
+```js
 function test(fruit, quantity) {
   const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
   // condition 1: fruit must has value
@@ -76,7 +76,7 @@ test('apple', 20); // print: red, big quantity
 
 - 我個人遵循的一般規則是**在**發現**無效條件時提前返回**。
 
-```javascript
+```js
 /_ return early when invalid conditions found _/
 
 function test(fruit, quantity) {
@@ -99,7 +99,7 @@ function test(fruit, quantity) {
 
 - 如果通過反轉條件並提前返回，我們可以進一步減少嵌套。請查看下面的條件2，看看我們是如何做到的：
 
-```javascript
+```js
 /_ return early when invalid conditions found _/
 
 function test(fruit, quantity) {
@@ -152,7 +152,7 @@ test('apple', 2); // We have 2 apple!
 
 - 實際上，我們可以`q`通過分配默認函數參數來消除變量。
 
-```javascript
+```js
 function test(fruit, quantity = 1) { // if quantity not provided, default to one
   if (!fruit) return;
   console.log(`We have ${quantity} ${fruit}!`);
@@ -169,7 +169,7 @@ test('apple', 2); // We have 2 apple!
 
 - 如果我們`fruit`是一個對象怎麼辦？我們可以指定默認參數嗎？
 
-```javascript
+```js
 function test(fruit) { 
   // printing fruit name if value provided
   if (fruit && fruit.name)  {
@@ -190,7 +190,7 @@ test({ name: 'apple', color: 'red' }); // apple
 
 - 看看上面的例子，我們想要打印水果名稱，如果它可用，或者我們將打印未知。我們可以避免`fruit && fruit.name`使用默認函數參數和破壞進行條件檢查。
 
-```javascript
+```js
 // destructing - get name property only
 // assign default empty object {}
 function test({name} = {}) {
@@ -217,7 +217,7 @@ test({ name: 'apple', color: 'red' }); // apple
 
 - 以下是使用Lodash的示例：
 
-```javascript
+```js
 // Include lodash library, you will get _
 function test(fruit) {
   console.log(__.get(fruit, 'name', 'unknown'); // get property name, if not available, assign default value 'unknown'
@@ -238,7 +238,7 @@ test({ name: 'apple', color: 'red' }); // apple
 
 - 讓我們看看下面的例子，我們想根據顏色打印水果：
 
-```javascript
+```js
 function test(color) {
   // use switch case to find fruits in color
   switch (color) {
@@ -262,7 +262,7 @@ test('yellow'); // ['banana', 'pineapple']
 
 - 上面的代碼似乎沒有錯，但我覺得它很冗長。使用具有更清晰語法的object literal可以實現相同的結果：
 
-```javascript
+```js
 // use object literal to find fruits in color
 const fruitColor = {
   red: ['apple', 'strawberry'],
@@ -278,7 +278,7 @@ function test(color) {
 
 - 或者，您可以使用[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)來實現相同的結果：
 
-```javascript
+```js
 // use Map to find fruits in color
 const fruitColor = new Map()
   .set('red', ['apple', 'strawberry'])
@@ -301,7 +301,7 @@ function test(color) {
 
 - 對於上面的例子，我們實際上可以重構我們的代碼以獲得相同的結果`Array.filter`。
 
-```javascript
+```js
 const fruits = [
   { name: 'apple', color: 'red' }, 
   { name: 'strawberry', color: 'red' }, 
@@ -324,7 +324,7 @@ function test(color) {
 
 - 最後一個提示更多的是利用新的（但不是那麼新的）Javascript Array函數來減少代碼行。看下面的代碼，我們想檢查所有水果是否都是紅色的：
 
-```javascript
+```js
 const fruits = [
   { name: 'apple', color: 'red' },
   { name: 'banana', color: 'yellow' },
@@ -348,7 +348,7 @@ function test() {
 - 代碼太長了！我們可以通過以下方式減少行數`Array.every`：
 (every() 方法會測試陣列中的所有元素是否都通過了由給定之函式所實作的測試。)
 
-```javascript
+```js
 const fruits = [
   { name: 'apple', color: 'red' },
   { name: 'banana', color: 'yellow' },
@@ -367,7 +367,7 @@ function test() {
 - 現在更乾淨了嗎？以類似的方式，如果我們想測試任何水果是否為紅色，我們可以用`Array.some`它來實現它。
 (some() 方法會測試陣列中是否至少有一個元素通過由給定之函式所實作的測試。)
 
-```javascript
+```js
 const fruits = [
   { name: 'apple', color: 'red' },
   { name: 'banana', color: 'yellow' },

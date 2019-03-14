@@ -2,7 +2,7 @@
 
 ## 『自己的 Storybook』安裝相關 Storybook 套件版號
 
-```javascript
+```js
 "devDependencies": {
   "@storybook/addon-actions": "^5.0.1",
   "@storybook/addon-backgrounds": "^5.0.1",
