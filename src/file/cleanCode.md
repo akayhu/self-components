@@ -223,7 +223,7 @@ function test(fruit) {
   console.log(__.get(fruit, 'name', 'unknown'); // get property name, if not available, assign default value 'unknown'
 }
 
-//test results
+// test results
 
 test(undefined); // unknown
 
@@ -253,7 +253,7 @@ function test(color) {
   }
 }
 
-//test results
+// test results
 
 test(null); // []
 
@@ -313,6 +313,7 @@ const fruits = [
 
 function test(color) {
   // use Array filter to find fruits in color
+
   return fruits.filter(f => f.color == color);
 
 }
