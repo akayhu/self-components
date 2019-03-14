@@ -1,4 +1,4 @@
-# RWD 各尺寸參考
+# RWD(Responsive web design) 各尺寸參考
 
 尺寸參考為`scss`方式顯示，也可拿來直接套用。使用範例：
 ```css
