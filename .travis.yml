@@ -42,10 +42,10 @@ deploy:
 
 # 與slack串
 notifications:
-  campfire:
+  slack:
     rooms:
       secure: WQQ5e80PbpiBayGU7xrYakUmkVoR9hWYs/21t+/vyeggS21zcCVDFnVHE4rAPsXqL8O6PcjhkMFxJHTTR84EVTnD1FMsP6J/kb7liScRv5ChfJuDE3xglAlKdJGVgfEneIL0A71qR9b03KrBL/L98P9YESxwQ+5YxDCVBlwvAAeL9N0W3zZU4qwMjd60kebme1SYJjGxN055cp7c+5o2keJSnnoHaOm53EiyqaPqQ5CcHz8Col2GfOMZafpKPzEE3V3iMYeoVJcwykgQBrLFpqSGm06j32fO1+A0yFLyCYaGHIN/fBkRPj3Ydm0yZaUN1kDkH2Ysfw3SYy8o8eSn9KbH2i9IdhkLMo280vm5k3Oxhyu+Y8IY294Jk16tIxuTGVfzkDgPJ/hWR88HpBGWfodT+FdIijwzPhssUDTdq9uHdTM/KD567574mIEW2EpCMBuS7xIv+QDH3fe6eCQkx8XQkYBn2sWWyGKSloIr8ZNvvZCBtWjmNaXSo20HNvtVowzk5ifC7OmXjzGJEDplbfHsHVGuBi2bVjXdF5QV1+Ym0mc6g4dZngcixX058QZMiDkI3+vCUmhEZ8zVdlJzNqDDiA5QhzsaCmGDhy5FUCZ+aUk/pW0w/lADjmstGNbiWf7zCpwM1yodNL5ebOjEl0VH+o/Vz8NJoCCrJQrloFo=
-  template:
-    - Deploy %{result} of %{repository}@%{branch} by %{author}
-    - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) in %{duration}
-    - 'Commit message : %{commit_message}'
+    template:
+      - Deploy %{result} of %{repository}@%{branch} by %{author}
+      - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) in %{duration}
+      - 'Commit message : %{commit_message}'
