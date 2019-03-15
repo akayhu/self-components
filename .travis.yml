@@ -44,7 +44,7 @@ deploy:
 notifications:
   slack:
     rooms:
-      secure: WQQ5e80PbpiBayGU7xrYakUmkVoR9hWYs/21t+/vyeggS21zcCVDFnVHE4rAPsXqL8O6PcjhkMFxJHTTR84EVTnD1FMsP6J/kb7liScRv5ChfJuDE3xglAlKdJGVgfEneIL0A71qR9b03KrBL/L98P9YESxwQ+5YxDCVBlwvAAeL9N0W3zZU4qwMjd60kebme1SYJjGxN055cp7c+5o2keJSnnoHaOm53EiyqaPqQ5CcHz8Col2GfOMZafpKPzEE3V3iMYeoVJcwykgQBrLFpqSGm06j32fO1+A0yFLyCYaGHIN/fBkRPj3Ydm0yZaUN1kDkH2Ysfw3SYy8o8eSn9KbH2i9IdhkLMo280vm5k3Oxhyu+Y8IY294Jk16tIxuTGVfzkDgPJ/hWR88HpBGWfodT+FdIijwzPhssUDTdq9uHdTM/KD567574mIEW2EpCMBuS7xIv+QDH3fe6eCQkx8XQkYBn2sWWyGKSloIr8ZNvvZCBtWjmNaXSo20HNvtVowzk5ifC7OmXjzGJEDplbfHsHVGuBi2bVjXdF5QV1+Ym0mc6g4dZngcixX058QZMiDkI3+vCUmhEZ8zVdlJzNqDDiA5QhzsaCmGDhy5FUCZ+aUk/pW0w/lADjmstGNbiWf7zCpwM1yodNL5ebOjEl0VH+o/Vz8NJoCCrJQrloFo=
+      secure: a0Zg3SJ550GCLj0l+z8EuEyTHgOgcCIoCCK157e+wKTpatGxCKmOYN9b0bzH3lAYUinruwk+Xayrt6arZuGdJA/V54watEpDTEXvXtbGxu3qOd4Jqlneq3VnTD1IQmYA6cXeyseIqQbQPWqs/Ar0Ywp2jKLdi2KINEmWVwWQekvhJmlN5rjcObaXezJtlUaAnHd8LTk4ArVPOnGUUAvWPjGTjCf04JP2XfR3/+SSbguitmSUW7Ww3ZTnbWpCdZqpoN7RY2uH/XrsMvyruHQqi6oQUPTev46Gu7YbTIIdtWZhJzEPoAsdleutdh7SrYYyYj+iZcnDVyZUwle0oDUECcLmckBRcpayeNPrY1sLUdCV+tVralyninTB+5IljW6/tQhO3yi+lqhPlb8CDSrkxuGOkNlxU1MFPA9n0pufCZ6Icyfl7h/+/87tNj03iAooUmJqntACV9UY76inpVcLQOJWl7wjeNEX6yf6ftfG0WBr4+AtbVEpDGceuroL5yJF37D2pOsGXFHVKTeFq8MTmUXXKKPsaNFE8SX2DO2NKdkS9HurWmrTjji4cBokLIZ89rrv61Kx3AvejSnJBTzHobGSDj52Iufd8ju0ypOef6RJ5A3mTX4e+TE+GPfN+OB7J2JWshfpdjcRezkEzwW4T0v7FIcBC+uZNJNR93NjfaU=
     template:
       - Deploy %{result} of %{repository}@%{branch} by %{author}
       - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) in %{duration}
