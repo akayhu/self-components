@@ -8,7 +8,7 @@ import immutable from './immutable.md';
 import onlineLearning from './onlineLearning.md';
 import rwdSize from './rwdSize.md';
 import arrayApproach from './arrayApproach.md';
-import rubyInstall from 'rubyInstall.md';
+import rubyInstall from './rubyInstall.md';
 
 storiesOf('筆記', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
