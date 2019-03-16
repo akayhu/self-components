@@ -10,11 +10,13 @@ import rwdSize from './rwdSize.md';
 import arrayApproach from './arrayApproach.md';
 import rubyInstall from './rubyInstall.md';
 import gitInstall from './gitInstall.md';
+import reactLifeCycle from './reactLifeCycle.md';
 
 storiesOf('筆記', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
   .add('安裝 React 開發環境', doc(react))
   .add('安裝 Storybook 環境', doc(storybook))
+  .add('React Life Cycle (React 16.3版之後)', doc(reactLifeCycle))
   .add('Immutable', doc(immutable))
   .add('JavaScript 七種陣列的處理方法', doc(arrayApproach))
   .add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode))
