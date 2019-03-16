@@ -2,6 +2,8 @@
 
 大致上可分類為 Mounting增加、Updating更新、Unmounting移除增加。
 
+![image](https://github.com/akayhu/self-components/blob/master/src/file/image/react-life.png?raw=true)
+
 PS：React 官方已經在 2018/03/27 宣告 不推薦使用：
 `componentWillMount`、`componentWillReceiveProps`、`componentWillUpdate` 並且react 16.3版本以後這些method會加上前綴UNSAFE_，17版本會丟棄。提醒使用的時候要特別小心。
 
