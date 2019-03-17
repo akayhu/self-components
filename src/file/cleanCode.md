@@ -27,6 +27,7 @@ function test(fruit) {
 function test(fruit) {
   // extract conditions to array
   const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+
   if (redFruits.includes(fruit)) {
     console.log('red');
   }
@@ -61,11 +62,8 @@ function test(fruit, quantity) {
 }
 
 // test results
-
 test(null); // error: No fruits
-
 test('apple'); // print: red
-
 test('apple', 20); // print: red, big quantity
 ```
 
@@ -83,15 +81,14 @@ function test(fruit, quantity) {
   const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
   // condition 1: throw error early
   if (!fruit) throw new Error('No fruit!');
-
-      // condition 2: must be red
-      if (redFruits.includes(fruit)) {
-        console.log('red');
-        // condition 3: must be big quantity
-        if (quantity > 10) {
-          console.log("big quantity");
-        }
-      }
+  // condition 2: must be red
+  if (redFruits.includes(fruit)) {
+    console.log('red');
+    // condition 3: must be big quantity
+    if (quantity > 10) {
+      console.log("big quantity");
+    }
+  }
 }
 ```
 
@@ -106,7 +103,6 @@ function test(fruit, quantity) {
   const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
 
   if (!fruit) throw new Error('No fruit!'); // condition 1: throw error early
-
   if (!redFruits.includes(fruit)) return; // condition 2: stop when fruit is not red
   console.log('red');
   // condition 3: must be big quantity
@@ -144,9 +140,7 @@ function test(fruit, quantity) {
 }
 
 //test results
-
 test('banana'); // We have 1 banana!
-
 test('apple', 2); // We have 2 apple!
 ```
 
@@ -159,9 +153,7 @@ function test(fruit, quantity = 1) { // if quantity not provided, default to one
 }
 
 //test results
-
 test('banana'); // We have 1 banana!
-
 test('apple', 2); // We have 2 apple!
 ```
 
@@ -180,11 +172,8 @@ function test(fruit) {
 }
 
 //test results
-
 test(undefined); // unknown
-
 test({ }); // unknown
-
 test({ name: 'apple', color: 'red' }); // apple
 ```
 
@@ -198,11 +187,8 @@ function test({name} = {}) {
 }
 
 //test results
-
 test(undefined); // unknown
-
 test({ }); // unknown
-
 test({ name: 'apple', color: 'red' }); // apple
 ```
 
@@ -224,11 +210,8 @@ function test(fruit) {
 }
 
 // test results
-
 test(undefined); // unknown
-
 test({ }); // unknown
-
 test({ name: 'apple', color: 'red' }); // apple
 ```
 
@@ -254,9 +237,7 @@ function test(color) {
 }
 
 // test results
-
 test(null); // []
-
 test('yellow'); // ['banana', 'pineapple']
 ```
 
@@ -272,7 +253,6 @@ const fruitColor = {
 
 function test(color) {
   return fruitColor[color] || [];
-
 }
 ```
 
@@ -287,7 +267,6 @@ const fruitColor = new Map()
 
 function test(color) {
   return fruitColor.get(color) || [];
-
 }
 ```
 
@@ -313,9 +292,7 @@ const fruits = [
 
 function test(color) {
   // use Array filter to find fruits in color
-
   return fruits.filter(f => f.color == color);
-
 }
 ```
 
@@ -340,9 +317,7 @@ function test() {
     if (!isAllRed) break;
     isAllRed = (f.color == 'red');
   }
-
   console.log(isAllRed); // false
-
 }
 ```
 
@@ -359,9 +334,7 @@ const fruits = [
 function test() {
   // condition: short way, all fruits must be red
   const isAllRed = fruits.every(f => f.color == 'red');
-
   console.log(isAllRed); // false
-
 }
 ```
 
@@ -378,9 +351,7 @@ const fruits = [
 function test() {
   // condition: if any fruit is red
   const isAnyRed = fruits.some(f => f.color == 'red');
-
   console.log(isAnyRed); // true
-
 }
 ```
 

@@ -6,13 +6,13 @@
 
 或直接貼上下面指令安裝。
 
-```
+```js
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Homebrew 安裝完成後在用 Homebrew 軟體來安裝 Git，指令如下：
 
-```
+```js
 brew install git
 ```
 

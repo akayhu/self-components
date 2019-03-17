@@ -6,7 +6,7 @@
 
 或直接貼上下面指令安裝。
 
-```
+```js
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -16,7 +16,7 @@
 
 指令如下：
 
-```
+```js
 brew install ruby
 ```
 
