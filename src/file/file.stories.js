@@ -13,6 +13,7 @@ import gitInstall from './gitInstall.md';
 import reactLifeCycle from './reactLifeCycle.md';
 import travisCi from './travis-ci.md';
 import httpHeader from './httpHeader.md';
+import reqular from './regular.md';
 
 const file = storiesOf('筆記', module);
 
@@ -23,6 +24,7 @@ file
   .add('React Life Cycle (React 16.3版之後)', doc(reactLifeCycle))
   .add('Immutable', doc(immutable))
   .add('JavaScript 七種陣列的處理方法', doc(arrayApproach))
+  .add('JavaScript 正則表達式', doc(reqular))
   .add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode))
   .add('HTTP 訊息的 header', doc(httpHeader))
   .add('RWD 各尺寸參考', doc(rwdSize))
