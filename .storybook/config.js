@@ -1,6 +1,7 @@
 import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withPropsTable } from "storybook-addon-react-docgen";
 import { withOptions } from "@storybook/addon-options";
+import { withKnobs } from '@storybook/addon-knobs/react';
 import myTheme from './myTheme';
 import 'antd/dist/antd.css';
 import './style.css';
@@ -12,6 +13,7 @@ const loadStories = () => {
 
 // 爬取 propTypes
 addDecorator(withPropsTable);
+addDecorator(withKnobs);
 
 addParameters({
   options: {
