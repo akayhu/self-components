@@ -14,6 +14,7 @@ import reactLifeCycle from './reactLifeCycle.md';
 import travisCi from './travis-ci.md';
 import httpHeader from './httpHeader.md';
 import reqular from './regular.md';
+import reactPropType from './reactPropTypes.md';
 
 const file = storiesOf('筆記', module);
 
@@ -22,6 +23,7 @@ file
   .add('安裝 React 開發環境', doc(react))
   .add('安裝 Storybook 環境', doc(storybook))
   .add('React Life Cycle (React 16.3版之後)', doc(reactLifeCycle))
+  .add('React 的 PropTypes 使用方法', doc(reactPropType))
   .add('Immutable', doc(immutable))
   .add('JavaScript 七種陣列的處理方法', doc(arrayApproach))
   .add('JavaScript 正則表達式', doc(reqular))
