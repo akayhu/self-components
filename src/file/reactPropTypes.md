@@ -27,6 +27,7 @@ var component = React.render(
 
 若沒有按照規範，會顯示警告
 
+![image](https://github.com/akayhu/self-components/blob/master/src/file/image/warningPropTypes.png?raw=true)
 
 ## React.PropTypes 的種類
 
