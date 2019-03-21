@@ -15,6 +15,7 @@ import travisCi from './travis-ci.md';
 import httpHeader from './httpHeader.md';
 import reqular from './regular.md';
 import reactPropType from './reactPropTypes.md';
+import browserSupport from './browserSupport.md';
 
 const file = storiesOf('筆記', module);
 
@@ -28,6 +29,7 @@ file
   .add('JavaScript 七種陣列的處理方法', doc(arrayApproach))
   .add('JavaScript 正則表達式', doc(reqular))
   .add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode))
+  .add('瀏覽器不支援警告視窗', doc(browserSupport))
   .add('HTTP 訊息的 header', doc(httpHeader))
   .add('RWD 各尺寸參考', doc(rwdSize))
   .add('GitHub Pages 與 Travis CI 串接教學', doc(travisCi))
