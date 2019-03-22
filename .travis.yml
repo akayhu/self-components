@@ -27,6 +27,12 @@ notifications:
 install:
 - npm install
 
+# 運行腳本前做的事
+before_script:
+- if [ ${TRAVIS_BRANCH} == "lab" ]; then
+    export REACT_APP_STAGE=lab;
+  fi
+
 # 運行腳本
 script:
 - npm run build-storybook
