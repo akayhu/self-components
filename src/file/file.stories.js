@@ -16,6 +16,7 @@ import httpHeader from './httpHeader.md';
 import reqular from './regular.md';
 import reactPropType from './reactPropTypes.md';
 import browserSupport from './browserSupport.md';
+import arrayObject from './arrayObject.md';
 
 const file = storiesOf('筆記', module);
 
@@ -27,6 +28,7 @@ file
   .add('React 的 PropTypes 使用方法', doc(reactPropType))
   .add('Immutable', doc(immutable))
   .add('JavaScript 七種陣列的處理方法', doc(arrayApproach))
+  .add('JavaScript：使用 Array.map、Object.values 和 Object.keys 處理一連串的資料',doc(arrayObject))
   .add('JavaScript 正則表達式', doc(reqular))
   .add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode))
   .add('瀏覽器不支援警告視窗', doc(browserSupport))
