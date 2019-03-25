@@ -17,6 +17,7 @@ import reqular from './regular.md';
 import reactPropType from './reactPropTypes.md';
 import browserSupport from './browserSupport.md';
 import arrayObject from './arrayObject.md';
+import vsCode from './vsCode.md';
 
 const file = storiesOf('筆記', module);
 
@@ -38,6 +39,7 @@ file
 	.add('HTTP 訊息的 header', doc(httpHeader))
 	.add('RWD 各尺寸參考', doc(rwdSize))
 	.add('GitHub Pages 與 Travis CI 串接教學', doc(travisCi))
+	.add('Visual Studio Code 推薦安裝套件', doc(vsCode))
 	.add('Apple Mac 安裝 Git 教學', doc(gitInstall))
 	.add('Apple Mac 安裝 Ruby 教學', doc(rubyInstall))
 	.add('線上學習資源', doc(onlineLearning));
