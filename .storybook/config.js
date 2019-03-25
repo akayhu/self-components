@@ -2,7 +2,8 @@ import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withPropsTable } from "storybook-addon-react-docgen";
 import { withOptions } from "@storybook/addon-options";
 import { withKnobs } from '@storybook/addon-knobs/react';
-import myTheme from './myTheme';
+import { themes } from '@storybook/theming';
+// import myTheme from './myTheme';
 import 'antd/dist/antd.css';
 import './style.css';
 
@@ -17,7 +18,7 @@ addDecorator(withKnobs);
 
 addParameters({
   options: {
-    theme: myTheme,
+    theme: themes,
   },
   backgrounds: [
     { name: 'twitter', value: '#00aced', default: true },
