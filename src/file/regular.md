@@ -33,7 +33,7 @@ JavaScript 的特性借鑑許多語言：
 ```js
 var parse_url = /^(?:([A-Za-z+]:)?(\/(0,3))([0-9.\-A-Z-a-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
 
-var url = "https://www.ora.com:80/goodparts?q#frament";
+var url = 'https://www.ora.com:80/goodparts?q#frament';
 
 var result = parse_url.exec(url);
 
@@ -43,8 +43,7 @@ var blanks = '  ';
 var i;
 
 for (i = 0; i < name.length; i += 1) {
-  document.wrintIn(name[i] + ':' + 
-    blanks.substring(name[i].length), result[i]);
+	document.wrintIn(name[i] + ':' + blanks.substring(name[i].length), result[i]);
 }
 ```
 
@@ -68,7 +67,7 @@ for (i = 0; i < name.length; i += 1) {
 
 - hash: fragment
 
-現在讓我們開始解析 parse_ url ，
+現在讓我們開始解析 parse\_ url ，
 
 ```js
 var parse_url = /^(?:([A-Za-z+]:)?(\/(0,3))([0-9.\-A-Z-a-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
@@ -94,7 +93,7 @@ var parse_url = /^(?:([A-Za-z+]:)?(\/(0,3))([0-9.\-A-Z-a-z]+)(?::(\d+))?(?:\/([^
 (\/{0,3})
 ```
 
-`\/` 比對是否有`/`斜線字元，它被\反斜線字元轉義，所以不會被翻譯為正規式實字的結尾。`{0,3}` 意指它前面的`/`可以出現 1~3次。
+`\/` 比對是否有`/`斜線字元，它被\反斜線字元轉義，所以不會被翻譯為正規式實字的結尾。`{0,3}` 意指它前面的`/`可以出現 1~3 次。
 
 ```js
 ([0-9.\-A-Za-z]+)
@@ -129,7 +128,7 @@ var parse_url = /^(?:([A-Za-z+]:)?(\/(0,3))([0-9.\-A-Z-a-z]+)(?::(\d+))?(?:\/([^
 以`#`起始，「.」用於比對任何字元，但行末字元除外。
 
 ```js
-$
+$;
 ```
 
 表示字串結尾，確保 URL 後沒有其他東西。
@@ -138,8 +137,8 @@ $
 
 ```js
 var parse_number = /^-?\d+(?:\.\d*)?(?:e[+\-]?\d+)?$/i;
-var test = function (num) {
-    document.writeln(parse_number.test(num));
+var test = function(num) {
+	document.writeln(parse_number.test(num));
 };
 test('l'); //true
 test('number'); //false
@@ -201,7 +200,7 @@ i 找到相符合文字，忽略大小寫的差異，樣式中唯一一個字元
 
 - i：鈍感，忽略字元大小寫。
 
-- m：多行，^ 與 $ 能比對行末字元。
+- m：多行，^ 與 \$ 能比對行末字元。
 
 ```js
 var my_regexp = /"(?:\\.|[^\\\""])*"/g;
@@ -212,7 +211,7 @@ var my_regexp = /"(?:\\.|[^\\\""])*"/g;
 構式接受傳入字串，並編譯成 RegExp 物件。
 
 ```js
-var my_regexp = new RegExp("\"(?:\\.|[^\\\\\\\"])*\"", 'g');
+var my_regexp = new RegExp('"(?:\\.|[^\\\\\\"])*"', 'g');
 ```
 
 - 建字串需要額外注意反斜線各自有不同意義，須以引號轉義。
@@ -234,12 +233,12 @@ source：正規式來源字元。
 ## 以 RegExp 物件共享實例：
 
 ```js
-function make_a_matcher( ) {
-    return /a/gi;
+function make_a_matcher() {
+	return /a/gi;
 }
 
-var x = make_a_matcher( );
-var y = make_a_matcher( );
+var x = make_a_matcher();
+var y = make_a_matcher();
 x.lastIndex = 10;
 console.log(y.lastIndex); //10
 ```
@@ -253,7 +252,7 @@ console.log(y.lastIndex); //10
 序列以|字元區分。
 
 ```js
-"into.match(/in|int/)"
+'into.match(/in|int/)';
 ```
 
 從 into 中找出 in 就不會再找 int 了。
@@ -270,7 +269,7 @@ console.log(y.lastIndex); //10
 
 所有字元都被視為實字，除了控制字元和特殊字元：
 
-- \ / [ ] ( ) { } ? + * | . ^ $
+- \ / [ ]() { } ? + \\\* | . ^ \$
 
 - 如果想比對上述字元必須加上\。
 
@@ -280,7 +279,7 @@ console.log(y.lastIndex); //10
 
 未轉義的^可以比對字串始處，但 lastIndex 特性需為 0，若指定旗標 m 亦可以把行末字元納入比對。
 
-未轉義的$可以比對字串尾處，若指定旗標 m 亦可以把行末字元納入比對。
+未轉義的\$可以比對字串尾處，若指定旗標 m 亦可以把行末字元納入比對。
 
 ## 正規式轉義
 
@@ -300,11 +299,11 @@ console.log(y.lastIndex); //10
 
 `\d`：與[0-9]意思相同；\D：為前者反義，與[^0-9]相同，比對非數字字元。
 
-`\s` 與 [\f\n\r\t\u000B\u0020\u00A0\2028\u2029] 同義；\S 與前者反義，與 [^\f\n\r\t\u000B\u0020\u00A0\2028\u2029] 同義。
+`\s` 與 [\f\n\r\t\u000B\u0020\u00A0\2028\u2029] 同義；\S 與前者反義，與 [^\f\n\r\t\u000b\u0020\u00a0\2028\u2029] 同義。
 
-`\w` 與 [0-9A-Z_a-z] 意思相同，能比對所有英數字元；\W 與前者反義，與 [^0-9A-Z_a-z] 同義。（/w 應該代表組成詞彙的一組字元。）
+`\w` 與 [0-9A-Z_a-z] 意思相同，能比對所有英數字元；\W 與前者反義，與 [^0-9a-z_a-z] 同義。（/w 應該代表組成詞彙的一組字元。）
 
-`\b` 設計為字詞邊界的定位點，它使用/w尋找字詞邊界，對於多國語系無效，這不算優良部份。
+`\b` 設計為字詞邊界的定位點，它使用/w 尋找字詞邊界，對於多國語系無效，這不算優良部份。
 
 ## 正規式集結
 
@@ -332,7 +331,7 @@ console.log(y.lastIndex); //10
 
 - ?：等同於 {0,1}。
 
-- *：等同於 {0,}。
+- \*：等同於 {0,}。
 
 - +：等同於 {1,}。
 

@@ -1,27 +1,27 @@
 # React 的 PropTypes 使用方法
 
-propTypes 使用來規範元件Props的型別與必需狀態
+propTypes 使用來規範元件 Props 的型別與必需狀態
 
 ```js
 var Test = React.createClass({
-  propTypes: {
-    // required
-    requiredFunc: React.PropTypes.func.isRequired,
-    requiredAny: React.PropTypes.any.isRequired,
-    // primitives, optional by default
-    bool: React.PropTypes.bool,
-    func: React.PropTypes.func,
-    number: React.PropTypes.number,
-    string: React.PropTypes.string,
-  },
-  render() {
-    return <div/>
-  }
+	propTypes: {
+		// required
+		requiredFunc: React.PropTypes.func.isRequired,
+		requiredAny: React.PropTypes.any.isRequired,
+		// primitives, optional by default
+		bool: React.PropTypes.bool,
+		func: React.PropTypes.func,
+		number: React.PropTypes.number,
+		string: React.PropTypes.string,
+	},
+	render() {
+		return <div />;
+	},
 });
 
 var component = React.render(
-  <Test requiredFunc="bar" bool="true" requiredAny="a"/>, 
-  document.body
+	<Test requiredFunc="bar" bool="true" requiredAny="a" />,
+	document.body
 );
 ```
 
@@ -65,7 +65,7 @@ React.PropTypes.shape({                          // 是否符合指定格式的�
 
 React.PropTypes.any.isRequired  // 可以是任何格式，且必要。
 
-// 自定義格式(當不符合的時候，會顯示Error) 
+// 自定義格式(當不符合的時候，會顯示Error)
 
 // 不要用`console.warn` 或者 throw, 因为它在`oneOfType` 的情况下無效。
 
@@ -78,16 +78,16 @@ customPropType: function(props, propName, componentName) {
 
 ## getDefaultProps
 
-當父元件沒有提供props的屬性時，可以採用getDefaultProps，預設props屬性的方式，讓元件使用預設的設定值，確保有props帶入。
+當父元件沒有提供 props 的屬性時，可以採用 getDefaultProps，預設 props 屬性的方式，讓元件使用預設的設定值，確保有 props 帶入。
 
 ```js
-var ComponentWithDefaultProps = React.createClass({ 
-  getDefaultProps : function () { 
-    return {
-      value : 'default value' 
-    }; 
-  }, 
-  /* ... */ 
+var ComponentWithDefaultProps = React.createClass({
+	getDefaultProps: function() {
+		return {
+			value: 'default value',
+		};
+	},
+	/* ... */
 });
 ```
 

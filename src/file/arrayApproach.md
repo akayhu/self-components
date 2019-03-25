@@ -1,24 +1,25 @@
 # JavaScript 七種陣列的處理方法
 
 以下使用這份陣列資料來實作
+
 ```js
 let people = [
-  {
-    name: '大中天',
-    money: 500
-  },
-  {
-    name: '大小天',
-    money: 3000
-  },
-  {
-    name: '大大天',
-    money: 60000
-  },
-  {
-    name: '大中小',
-    money: Infinity
-  }
+	{
+		name: '大中天',
+		money: 500,
+	},
+	{
+		name: '大小天',
+		money: 3000,
+	},
+	{
+		name: '大大天',
+		money: 60000,
+	},
+	{
+		name: '大中小',
+		money: Infinity,
+	},
 ];
 ```
 
@@ -38,7 +39,7 @@ console.log(forEachLoop); // undefined
 
 ```js
 var mapLoop = people.map(function(item, index, array) {
-  return item;
+	return item;
 });
 
 console.log(mapLoop); // 與原本陣列資料相同
@@ -49,12 +50,12 @@ console.log(mapLoop); // 與原本陣列資料相同
 `filter` 可以用來過濾陣列中符合條件的物件，以下範例中搜尋符合大於 5000 元的，只要將該物件中的回傳為 true，那麼就會回傳完整的物件。
 
 ```js
-var filterEmpty = people.filter(function(item, index, array){});
+var filterEmpty = people.filter(function(item, index, array) {});
 
 console.log(filterEmpty); // 沒有條件，會是一個空陣列
 
 var filterMoneyThan5000 = people.filter(function(item, index, array) {
-  return item.money > 5000; // 取得大於五千元
+	return item.money > 5000; // 取得大於五千元
 });
 
 console.log(filterMoneyThan5000); // 大大天, 大中小 這兩個物件
@@ -65,18 +66,18 @@ console.log(filterMoneyThan5000); // 大大天, 大中小 這兩個物件
 `find` 是用來搜尋陣列中符合條件的物件，且僅能有一個，當回傳 `true` 數量超過兩者以上，那會以第一個為優先，通常會適合搜尋來搜尋特定 id。
 
 ```js
-var findEmpty = people.find(function(item, index, array){});
+var findEmpty = people.find(function(item, index, array) {});
 
 console.log(findEmpty); // 沒有條件，會是 undefined
 
 var findMoneyThan5000 = people.find(function(item, index, array) {
-  return item.money > 5000; // 取得大於五千元
+	return item.money > 5000; // 取得大於五千元
 });
 
 console.log(findMoneyThan5000); // 雖然答案有兩個，但只會回傳 '大大天' 這一個物件
 
 var findJay = people.find(function(item, index, array) {
-  return item.name === '大大天';  // 找到大大天
+	return item.name === '大大天'; // 找到大大天
 });
 
 console.log(findJay);
@@ -88,12 +89,12 @@ console.log(findJay);
 
 ```js
 // 沒有 return 也會產生 undefined
-var mapEmpty = people.map(function(item, index, array){});
+var mapEmpty = people.map(function(item, index, array) {});
 console.log(mapEmpty); // [undefined, undefined, undefined, undefined]
 
-var everyoneAdd = people.map(function(item, index, array){
-  item.money = item.money + 500; // 每個 money + 500
-  return item; // 回傳物件
+var everyoneAdd = people.map(function(item, index, array) {
+	item.money = item.money + 500; // 每個 money + 500
+	return item; // 回傳物件
 });
 
 console.log(everyoneAdd);
@@ -121,13 +122,13 @@ console.log(mapMoneyThan5000);
 
 ```js
 var ans = people.every(function(item, index, array) {
-  return item.money > 10000;
+	return item.money > 10000;
 });
 
 console.log(ans); // false: 只要有部分不符合，則為 false
 
 var ans2 = people.every(function(item, index, array) {
-  return item.money > 300;
+	return item.money > 300;
 });
 
 console.log(ans2); // true: 大家錢都有超過 300
@@ -139,13 +140,13 @@ console.log(ans2); // true: 大家錢都有超過 300
 
 ```js
 var ans = people.some(function(item, index, array) {
-  return item.money > 10000;
+	return item.money > 10000;
 });
 
 console.log(ans); // false: 只要有部分符合，則為 true
 
 var ans2 = people.some(function(item, index, array) {
-  return item.money < 300;
+	return item.money < 300;
 });
 
 console.log(ans2); // true: 大家錢都不少於 300
@@ -161,33 +162,51 @@ console.log(ans2); // true: 大家錢都不少於 300
 - array：全部陣列
 
 ```js
-var reduceEmpty = people.reduce(function(accumulator, currentValue, currentIndex, array){});
-console.log(reduceEmpty);        
+var reduceEmpty = people.reduce(function(
+	accumulator,
+	currentValue,
+	currentIndex,
+	array
+) {});
+console.log(reduceEmpty);
 ```
 
 可以透過與前一個相加的方式，累加陣列中所有的值。
 
 ```js
 people.pop(); // 大中小的錢深不可測，先移除掉
-var reducePlus = people.reduce(function(accumulator, currentValue, currentIndex, array) {
-  // 分別為前一個回傳值, 目前值, 當前索引值
-  console.log(accumulator, currentValue, currentIndex);
-  return accumulator + currentValue.money;  // 與前一個值相加
-}, 0);                                      // 傳入初始化值為 0
+var reducePlus = people.reduce(function(
+	accumulator,
+	currentValue,
+	currentIndex,
+	array
+) {
+	// 分別為前一個回傳值, 目前值, 當前索引值
+	console.log(accumulator, currentValue, currentIndex);
+	return accumulator + currentValue.money; // 與前一個值相加
+},
+0); // 傳入初始化值為 0
 
-console.log(reducePlus);                    // 總和為 63500
+console.log(reducePlus); // 總和為 63500
 ```
 
 也可以相互比對，取出最高的值。
 
 ```js
-var reduceBestOne = people.reduce(function(accumulator, currentValue, currentIndex, array) {
-  console.log('reduce', accumulator, currentValue, currentIndex)
-  return Math.max(accumulator, currentValue.money); // 與前一個值比較哪個大
-}, 0);
+var reduceBestOne = people.reduce(function(
+	accumulator,
+	currentValue,
+	currentIndex,
+	array
+) {
+	console.log('reduce', accumulator, currentValue, currentIndex);
+	return Math.max(accumulator, currentValue.money); // 與前一個值比較哪個大
+},
+0);
 
 console.log(reduceBestOne); // 最大值為 60000
 ```
 
 ## 出處
+
 [https://ithelp.ithome.com.tw/articles/10194206](https://ithelp.ithome.com.tw/articles/10194206)

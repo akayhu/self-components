@@ -34,7 +34,7 @@
 ```js
 const idList = Object.keys(list);
 
-idList // ["1234567890", "2345678901", "3456789012"]
+idList; // ["1234567890", "2345678901", "3456789012"]
 ```
 
 ### 取得 value 的陣列
@@ -47,7 +47,7 @@ idList // ["1234567890", "2345678901", "3456789012"]
 ```js
 const nameList = Object.values(list).map(item => item.name);
 
-nameList // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
+nameList; // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 ```
 
 ## 陣列中有物件 1
@@ -58,18 +58,18 @@ nameList // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 
 ```js
 const list = [
-  {
-    id: "1234567890",
-    name: "Nina Ricci",
-  },
-  {
-    id: "2345678901",
-    name: "Hello Kitty",
-  },
-  {
-    id: "3456789012",
-    name: "Pusheen the cat",
-  },
+	{
+		id: '1234567890',
+		name: 'Nina Ricci',
+	},
+	{
+		id: '2345678901',
+		name: 'Hello Kitty',
+	},
+	{
+		id: '3456789012',
+		name: 'Pusheen the cat',
+	},
 ];
 ```
 
@@ -83,7 +83,7 @@ const list = [
 ```js
 const idList = list.map(item => Object.values(item)[0]); // 0 表示第一個屬性值
 
-idList // ["1234567890", "2345678901", "3456789012"]
+idList; // ["1234567890", "2345678901", "3456789012"]
 ```
 
 取得 name。
@@ -91,7 +91,7 @@ idList // ["1234567890", "2345678901", "3456789012"]
 ```js
 const nameList = list.map(item => Object.values(item)[1]); // 1 表示第二個屬性值
 
-nameList // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
+nameList; // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 ```
 
 ## 陣列中有物件 2
@@ -102,16 +102,16 @@ nameList // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 
 ```js
 [
-  {
-    "1234567890": "Nina Ricci",
-  },
-  {
-    "2345678901": "Hello Kitty",
-  },
-  {
-    "3456789012": "Pusheen the cat",
-  },
-]
+	{
+		'1234567890': 'Nina Ricci',
+	},
+	{
+		'2345678901': 'Hello Kitty',
+	},
+	{
+		'3456789012': 'Pusheen the cat',
+	},
+];
 ```
 
 ### 取得 key 的陣列
@@ -122,7 +122,7 @@ nameList // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 ```js
 const idList = list.map(item => Object.keys(item)[0]);
 
-idList // ["1234567890", "2345678901", "3456789012"]
+idList; // ["1234567890", "2345678901", "3456789012"]
 ```
 
 ### 取得 value 的陣列
@@ -130,11 +130,10 @@ idList // ["1234567890", "2345678901", "3456789012"]
 - 使用 Array.map 迭代陣列，並將 callback 中的執行結果組成新陣列後回傳為最終結果 nameList。
 - 使用 Object.values 取得每個物件的 value，由於 Object.value 會幫每個物件在取值時建立一個陣列，因此要用 [0] 再取得內容，即字串後回傳結果。
 
-
 ```js
 const nameList = list.map(item => Object.values(item)[0]);
 
-nameList // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
+nameList; // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 ```
 
 ## 出處

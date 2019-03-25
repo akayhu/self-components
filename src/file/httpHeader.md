@@ -156,7 +156,7 @@ Last-Modified：資料最後修改日期時間
 
 ### 非 HTTP/1.1 的首部字串
 
-HTTP 所使用的字串，不限於 RFC2616 定義的 47 種，還有 Cookie、Set-Cookie 和 Content-Desposition等等。
+HTTP 所使用的字串，不限於 RFC2616 定義的 47 種，還有 Cookie、Set-Cookie 和 Content-Desposition 等等。
 
 ### End-to-end header 和 Hop-by-hop header
 

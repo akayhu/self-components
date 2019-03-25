@@ -27,6 +27,7 @@ gem install travis // 安裝 travis
 ```
 
 PS：如果安裝出現錯誤`You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.`，指令前面加上`sudo`試試。
+
 ```js
 sudo gem install travis // 安裝 travis
 ```
