@@ -2,6 +2,8 @@
   "name": "self-components",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akayhu.github.io/self-components/",
+  "author": "Akay",
   "dependencies": {
     "antd": "^3.15.1",
     "babel-plugin-import": "^1.11.0",
