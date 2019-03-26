@@ -18,6 +18,7 @@ import reactPropType from './reactPropTypes.md';
 import browserSupport from './browserSupport.md';
 import arrayObject from './arrayObject.md';
 import vsCode from './vsCode.md';
+import process from './process.md';
 
 const file = storiesOf('筆記', module);
 
@@ -35,6 +36,7 @@ file
 	)
 	.add('JavaScript 正則表達式', doc(reqular))
 	.add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode))
+	.add('process對象', doc(process))
 	.add('瀏覽器不支援警告視窗', doc(browserSupport))
 	.add('HTTP 訊息的 header', doc(httpHeader))
 	.add('RWD 各尺寸參考', doc(rwdSize))
