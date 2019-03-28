@@ -15,7 +15,7 @@ npm install
 ## Package Script 說明
 
 運行 react app
-> 本專案安裝環境為create-react-app (CSR)
+> 本專案框架為create-react-app (CSR)
 
 ```bash
 npm start
@@ -28,7 +28,7 @@ npm run storybook
 ```
 
 運行 next 
-> next 只是嘗試安裝環境，不確定是否會與 create-react-app(CSR) 環境有所衝突與重複性環境架構
+> next 只是嘗試安裝框架，不確定是否會與 create-react-app(CSR) 框架有所衝突與重複性框架架構
 > 待測試或確認
 
 ```bash
