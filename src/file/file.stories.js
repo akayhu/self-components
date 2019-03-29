@@ -19,6 +19,7 @@ import browserSupport from './browserSupport.md';
 import arrayObject from './arrayObject.md';
 import vsCode from './vsCode.md';
 import process from './process.md';
+import curry from './curry.md';
 
 const file = storiesOf('筆記', module);
 
@@ -46,6 +47,9 @@ file
 	.add('JavaScript 正則表達式', doc(reqular), { notes: { markdown: reqular } })
 	.add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode), {
 		notes: { markdown: cleanCode },
+	})
+	.add('Currying in JavaScript（柯里化）', doc(curry), {
+		notes: { markdown: curry },
 	})
 	.add('process對象', doc(process), { notes: { markdown: process } })
 	.add('瀏覽器不支援警告視窗', doc(browserSupport), {
