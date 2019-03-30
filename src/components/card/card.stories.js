@@ -7,7 +7,6 @@ import bgImage from './image/bg.png';
 
 export const data = [
 	{
-		id: 1,
 		link: 'https://www.google.com',
 		linkTitle: 'Google',
 		defultUserImage: '',
@@ -19,7 +18,6 @@ export const data = [
 			'孫悟空，是小說《西遊記》中主要角色之一。又名孫行者，自封花果山美猴王、齊天大聖。曾任天官弼馬溫。玉帝後來為了招安孫悟空，承認了他自封的封號齊天大聖。取經後為如來佛祖授為鬪戰勝佛。',
 	},
 	{
-		id: 2,
 		link: 'https://www.google.com',
 		linkTitle: 'Google',
 		defultUserImage: '',
@@ -31,7 +29,6 @@ export const data = [
 			'孫悟空，是小說《西遊記》中主要角色之一。又名孫行者，自封花果山美猴王、齊天大聖。曾任天官弼馬溫。玉帝後來為了招安孫悟空，承認了他自封的封號齊天大聖。取經後為如來佛祖授為鬪戰勝佛。',
 	},
 	{
-		id: 3,
 		link: 'https://www.google.com',
 		linkTitle: 'Google',
 		defultUserImage: '',
@@ -43,7 +40,6 @@ export const data = [
 			'孫悟空，是小說《西遊記》中主要角色之一。又名孫行者，自封花果山美猴王、齊天大聖。曾任天官弼馬溫。玉帝後來為了招安孫悟空，承認了他自封的封號齊天大聖。取經後為如來佛祖授為鬪戰勝佛。',
 	},
 	{
-		id: 4,
 		link: 'https://www.google.com',
 		linkTitle: 'Google',
 		defultUserImage: '',
@@ -71,9 +67,9 @@ card
 					width: '100%',
 				}}
 			>
-				{data.map(data => (
+				{data.map((data, index) => (
 					<Card
-						key={data.id}
+						key={index}
 						link={data.link}
 						linkTitle={data.linkTitle}
 						userImage={data.userImage}
