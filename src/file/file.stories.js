@@ -22,6 +22,7 @@ import process from './process.md';
 import curry from './curry.md';
 import requireJs from './require.md';
 import es6Module from './es6Module.md';
+import hocPreliminary from './hocPreliminary.md';
 
 const file = storiesOf('筆記', module);
 
@@ -38,6 +39,9 @@ file
 		notes: { markdown: reactPropType },
 	})
 	.add('Immutable', doc(immutable), { notes: { markdown: immutable } })
+	.add('React Higher Order Components 初探觀念', doc(hocPreliminary), {
+		notes: { markdown: hocPreliminary },
+	})
 	.add('JavaScript 七種陣列的處理方法', doc(arrayApproach), {
 		notes: { markdown: arrayApproach },
 	})
