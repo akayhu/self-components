@@ -20,6 +20,8 @@ import arrayObject from './arrayObject.md';
 import vsCode from './vsCode.md';
 import process from './process.md';
 import curry from './curry.md';
+import requireJs from './require.md';
+import es6Module from './es6Module.md';
 
 const file = storiesOf('筆記', module);
 
@@ -50,6 +52,12 @@ file
 	})
 	.add('Currying in JavaScript（柯里化）', doc(curry), {
 		notes: { markdown: curry },
+	})
+	.add('Javascript 的 require 模塊(ES6以前)', doc(requireJs), {
+		notes: { markdown: requireJs },
+	})
+	.add('ES6 Modules(export和import)', doc(es6Module), {
+		notes: { markdown: es6Module },
 	})
 	.add('process對象', doc(process), { notes: { markdown: process } })
 	.add('瀏覽器不支援警告視窗', doc(browserSupport), {
