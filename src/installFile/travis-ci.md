@@ -4,7 +4,7 @@
 
 若是想要存取 private repository ，則是要從 [travis-ci.com](https://travis-ci.com/) 這個網址進入。
 
-![image](https://github.com/akayhu/self-components/blob/master/src/file/image/travis-ci.png?raw=true)
+![image](https://github.com/akayhu/self-components/blob/master/src/installFile/image/travis-ci.png?raw=true)
 
 ## TODO：
 

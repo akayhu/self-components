@@ -2,7 +2,7 @@
 
 先去安裝 macOS 缺少套件的管理工具[Homebrew](https://brew.sh/index_zh-tw)
 
-![image](https://github.com/akayhu/self-components/blob/master/src/file/image/homebrew.png?raw=true)
+![image](https://github.com/akayhu/self-components/blob/master/src/installFile/image/homebrew.png?raw=true)
 
 或直接貼上下面指令安裝。
 

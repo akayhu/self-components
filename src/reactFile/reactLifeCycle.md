@@ -2,7 +2,7 @@
 
 大致上可分類為 Mounting 增加、Updating 更新、Unmounting 移除增加。
 
-![image](https://github.com/akayhu/self-components/blob/master/src/file/image/react-life.png?raw=true)
+![image](https://github.com/akayhu/self-components/blob/master/src/reactFile/image/react-life.png?raw=true)
 
 PS：React 官方已經在 2018/03/27 宣告 不推薦使用：
 `componentWillMount`、`componentWillReceiveProps`、`componentWillUpdate` 並且 react 16.3 版本以後這些 method 會加上前綴 UNSAFE\_，17 版本會丟棄。提醒使用的時候要特別小心。
