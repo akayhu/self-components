@@ -5,14 +5,14 @@ import './card.css';
 class Card extends Component {
 	render() {
 		const {
-      link,
-      linkTitle,
-      defultUserImage,
-      defultBgImage,
+			link,
+			linkTitle,
+			defultUserImage,
+			defultBgImage,
 			userName,
 			userImage,
 			bgImage,
-			introduction
+			introduction,
 		} = this.props;
 
 		return (
@@ -24,15 +24,9 @@ class Card extends Component {
 					rel="noopener noreferrer"
 				>
 					<div className="card-bg">
-						<img
-							src={bgImage || defultBgImage}
-							alt="cover"
-						/>
+						<img src={bgImage || defultBgImage} alt="cover" />
 						<div className="cardAvatar">
-							<img
-								src={userImage ||defultUserImage}
-								alt="Avatar"
-							/>
+							<img src={userImage || defultUserImage} alt="Avatar" />
 						</div>
 					</div>
 					<div className="card-content">
@@ -50,14 +44,14 @@ class Card extends Component {
 }
 
 Card.propTypes = {
-  link: PropTypes.string,
-  linkTitle: PropTypes.string,
-  defultUserImage: PropTypes.string,
-  defultBgImage: PropTypes.string,
-  userName: PropTypes.string.isRequired,
-  userImage: PropTypes.string,
-  bgImage: PropTypes.string,
-  introduction: PropTypes.string.isRequired
+	link: PropTypes.string,
+	linkTitle: PropTypes.string,
+	defultUserImage: PropTypes.string,
+	defultBgImage: PropTypes.string,
+	userName: PropTypes.string.isRequired,
+	userImage: PropTypes.string,
+	bgImage: PropTypes.string,
+	introduction: PropTypes.string.isRequired,
 };
 
 export default Card;

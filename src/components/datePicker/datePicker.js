@@ -200,7 +200,7 @@ class DatePicker extends Component {
 					endYear < startYear ||
 					(startYear === endYear && endMonth < startMonth)
 				) {
-          message.error('時間期間錯誤，請再重新確認一下時間。');
+					message.error('時間期間錯誤，請再重新確認一下時間。');
 				} else {
 					this.setState({ visible: false });
 					this.props.onUpdateData(
