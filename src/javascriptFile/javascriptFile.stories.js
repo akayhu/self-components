@@ -11,7 +11,7 @@ import curry from './curry.md';
 import requireJs from './require.md';
 import es6Module from './es6Module.md';
 
-const javascriptFile = storiesOf('Javascript 筆記', module);
+const javascriptFile = storiesOf('筆記|Javascript 筆記', module);
 
 javascriptFile
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)

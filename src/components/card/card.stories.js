@@ -52,7 +52,7 @@ export const data = [
 	},
 ];
 
-const card = storiesOf('小名片', module);
+const card = storiesOf('UI Components|小名片', module);
 
 card
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
