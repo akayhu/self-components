@@ -93,4 +93,4 @@ var ComponentWithDefaultProps = React.createClass({
 
 ## 出處
 
-[http://jamestw.logdown.com/posts/257890-257890-reactjs-prop](http://jamestw.logdown.com/posts/257890-257890-reactjs-prop)
+[Reactjs 的 PropTypes 使用方法](http://jamestw.logdown.com/posts/257890-257890-reactjs-prop)

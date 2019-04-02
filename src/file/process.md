@@ -455,4 +455,4 @@ José F. Romaniello, [Graceful shutdown in node.js](https://joseoncode.com/2014/
 
 ## 出處
 
-[http://javascript.ruanyifeng.com/nodejs/process.html](http://javascript.ruanyifeng.com/nodejs/process.html)
+[process 對象](http://javascript.ruanyifeng.com/nodejs/process.html)

@@ -132,4 +132,4 @@ componentWillUnmount();
 
 ## 出處
 
-[https://iandays.com/2018/07/27/reactlife/index.html](https://iandays.com/2018/07/27/reactlife/index.html)
+[React Life Cycle 生命週期更新版，父子元件執行順序](https://iandays.com/2018/07/27/reactlife/index.html)

@@ -88,4 +88,4 @@ module 就是 Javascript 模塊的基本寫法。
 
 ## 出處
 
-[https://www.cnblogs.com/libin-1/p/7127481.html](https://www.cnblogs.com/libin-1/p/7127481.html)
+[徹底搞清楚 javascript 中的 require、import 和 export](https://www.cnblogs.com/libin-1/p/7127481.html)

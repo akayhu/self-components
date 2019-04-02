@@ -184,4 +184,4 @@ HTTP header 定義成緩存代理和非緩存代理兩種類型：
 
 ## 出處
 
-[https://ithelp.ithome.com.tw/articles/10204743](https://ithelp.ithome.com.tw/articles/10204743)
+[圖解 HTTP Chapter06 HTTP 首部 筆記精要](https://ithelp.ithome.com.tw/articles/10204743)

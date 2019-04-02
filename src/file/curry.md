@@ -128,4 +128,4 @@ getData1(function(result1) {
 
 ## 出處
 
-[https://cythilya.github.io/2017/02/27/currying-in-javascript/](https://cythilya.github.io/2017/02/27/currying-in-javascript/)
+[Currying in JavaScript（柯里化）](https://cythilya.github.io/2017/02/27/currying-in-javascript/)

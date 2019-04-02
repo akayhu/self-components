@@ -209,4 +209,4 @@ console.log(reduceBestOne); // 最大值為 60000
 
 ## 出處
 
-[https://ithelp.ithome.com.tw/articles/10194206](https://ithelp.ithome.com.tw/articles/10194206)
+[JavaScript 常用陣列方法](https://ithelp.ithome.com.tw/articles/10194206)

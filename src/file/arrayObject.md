@@ -138,4 +138,4 @@ nameList; // ["Nina Ricci", "Hello Kitty", "Pusheen the cat"]
 
 ## 出處
 
-[https://cythilya.github.io/2018/06/17/array-and-object-handling/](https://cythilya.github.io/2018/06/17/array-and-object-handling/)
+[JavaScript：使用 Array.map、Object.values 和 Object.keys 處理一連串的資料](https://cythilya.github.io/2018/06/17/array-and-object-handling/)

@@ -31,7 +31,8 @@ JavaScript 的特性借鑑許多語言：
 這邊有個範例要找對應分配的 URL。
 
 ```js
-var parse_url = /^(?:([A-Za-z+]:)?(\/(0,3))([0-9.\-A-Z-a-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+var parse_url =
+	'/^(?:([A-Za-z+]:)?(/(0,3))([0-9.-A-Z-a-z]+)(?::(d+))?(?:/([^?#]*))?(?:?([^#]*))?(?:#(.*))?$/';
 
 var url = 'https://www.ora.com:80/goodparts?q#frament';
 
@@ -269,7 +270,7 @@ console.log(y.lastIndex); //10
 
 所有字元都被視為實字，除了控制字元和特殊字元：
 
-- \ / [ ]() { } ? + \\\\\\* | . ^ \$
+- \ / [ ]() { } ? + \\\\\\\\* | . ^ \$
 
 - 如果想比對上述字元必須加上\。
 
@@ -337,4 +338,4 @@ console.log(y.lastIndex); //10
 
 ## 出處
 
-[https://ithelp.ithome.com.tw/articles/10209312](https://ithelp.ithome.com.tw/articles/10209312)
+[JavaScript 設計模式 優良部份 Chapter07 正則表達式](https://ithelp.ithome.com.tw/articles/10209312)

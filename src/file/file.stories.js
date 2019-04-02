@@ -23,6 +23,7 @@ import curry from './curry.md';
 import requireJs from './require.md';
 import es6Module from './es6Module.md';
 import hocPreliminary from './hocPreliminary.md';
+import reactForm from './reactForm.md';
 
 const file = storiesOf('筆記', module);
 
@@ -37,6 +38,9 @@ file
 	})
 	.add('React 的 PropTypes 使用方法', doc(reactPropType), {
 		notes: { markdown: reactPropType },
+	})
+	.add('React 對表單元素的prop設置值', doc(reactForm), {
+		notes: { markdown: reactForm },
 	})
 	.add('Immutable', doc(immutable), { notes: { markdown: immutable } })
 	.add('React Higher Order Components 初探觀念', doc(hocPreliminary), {
