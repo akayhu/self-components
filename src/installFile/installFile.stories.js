@@ -9,7 +9,7 @@ import onlineLearning from './onlineLearning.md';
 import travisCi from './travis-ci.md';
 import vsCode from './vsCode.md';
 
-const installFile = storiesOf('筆記|環境安裝與學習資源 筆記', module);
+const installFile = storiesOf('筆記|環境安裝與學習資源', module);
 
 installFile
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)

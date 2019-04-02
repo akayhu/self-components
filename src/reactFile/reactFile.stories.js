@@ -6,7 +6,7 @@ import reactPropType from './reactPropTypes.md';
 import hocPreliminary from './hocPreliminary.md';
 import reactForm from './reactForm.md';
 
-const reactFile = storiesOf('筆記|React 筆記', module);
+const reactFile = storiesOf('筆記|React', module);
 
 reactFile
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
