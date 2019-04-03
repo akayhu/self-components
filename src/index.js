@@ -1,12 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { render } from 'react-dom';
+import { createStore, compose, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
+import { createLogger } from 'redux-logger';
+import { BrowserRouter } from 'react-router-dom';
+import TodoListMain from 'containers/todoList';
+import reducer from 'reducers';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const loggerMiddleware = createLogger();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(
+	reducer,
+	composeEnhancer(applyMiddleware(thunkMiddleware, loggerMiddleware))
+);
+
+// 使用 <BrowserRouter> 作為我們的客戶端路由器組件
+render(
+	<Provider store={store}>
+		<BrowserRouter>
+			<TodoListMain />
+		</BrowserRouter>
+	</Provider>,
+	document.getElementById('root')
+);
