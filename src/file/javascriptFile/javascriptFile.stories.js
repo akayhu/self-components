@@ -10,6 +10,7 @@ import arrayObject from './arrayObject.md';
 import curry from './curry.md';
 import requireJs from './require.md';
 import es6Module from './es6Module.md';
+import closure from './closure.md';
 
 const javascriptFile = storiesOf('筆記|Javascript', module);
 
@@ -27,6 +28,9 @@ javascriptFile
 	.add('JavaScript 正則表達式', doc(reqular), { notes: { markdown: reqular } })
 	.add('在 JavaScript 中編寫更好的條件的5個技巧', doc(cleanCode), {
 		notes: { markdown: cleanCode },
+	})
+	.add('JavaScript 閉包（Closure）', doc(closure), {
+		notes: { markdown: closure },
 	})
 	.add('Currying in JavaScript（柯里化）', doc(curry), {
 		notes: { markdown: curry },
