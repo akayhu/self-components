@@ -4,6 +4,8 @@
 
 範疇：新增、修改、刪除、編輯、顯示已勾選、顯示未勾選、顯示全部
 
+![image](https://github.com/akayhu/self-components/blob/master/src/file/reactFile/image/todoList.png?raw=true)
+
 可了解 Action -> Store -> View 原理
 
 ## Sources Code
