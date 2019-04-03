@@ -11,6 +11,8 @@ import curry from './curry.md';
 import requireJs from './require.md';
 import es6Module from './es6Module.md';
 import closure from './closure.md';
+import FPBasicConcept from './FPBasicConcept.md';
+import FPGeneralFunction from './FPGeneralFunction.md';
 
 const javascriptFile = storiesOf('筆記|Javascript', module);
 
@@ -34,6 +36,12 @@ javascriptFile
 	})
 	.add('Currying in JavaScript（柯里化）', doc(curry), {
 		notes: { markdown: curry },
+	})
+	.add('Functional Programming 基本觀念', doc(FPBasicConcept), {
+		notes: { markdown: FPBasicConcept },
+	})
+	.add('Functional Programming 通用函式', doc(FPGeneralFunction), {
+		notes: { markdown: FPGeneralFunction },
 	})
 	.add('Javascript 的 require 模塊(ES6以前)', doc(requireJs), {
 		notes: { markdown: requireJs },
