@@ -57,6 +57,25 @@ const card = storiesOf('UI Components|小名片', module);
 card
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
 	.add(
+		'<Card> 小名片',
+		() => (
+			<div style={{ width: '300px' }}>
+				<Card
+					key={data[0].index}
+					link={data[0].link}
+					linkTitle={data[0].linkTitle}
+					userImage={data[0].userImage}
+					bgImage={data[0].bgImage}
+					userName={data[0].userName}
+					introduction={data[0].introduction}
+				/>
+			</div>
+		),
+		{
+			notes: { markdown: readme },
+		}
+	)
+	.add(
 		'<Card> 小名片列表',
 		() => (
 			<div
