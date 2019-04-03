@@ -5,6 +5,7 @@ import reactLifeCycle from './reactLifeCycle.md';
 import reactPropType from './reactPropTypes.md';
 import hocPreliminary from './hocPreliminary.md';
 import reactForm from './reactForm.md';
+import reactTodoList from './reactTodoList.md';
 
 const reactFile = storiesOf('筆記|React', module);
 
@@ -21,4 +22,7 @@ reactFile
 	})
 	.add('React Higher Order Components 初探觀念', doc(hocPreliminary), {
 		notes: { markdown: hocPreliminary },
+	})
+	.add('React TodoList Example', doc(reactTodoList), {
+		notes: { markdown: reactTodoList },
 	});
