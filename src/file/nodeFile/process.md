@@ -7,15 +7,13 @@
 
 `process`對象提供一系列屬性，用於返回系統信息。
 
-```js
-process.argv：返回一個數組，成員是當前進程的所有命令行參數。
-process.env：返回一個對象，成員為當前Shell的環境變量，比如process.env.HOME。
-process.installPrefix：返回一個字符串，表示 Node 安裝路徑的前綴，比如/usr/local。相應地，Node 的執行文件目錄為/usr/local/bin/node。
-process.pid：返回一個數字，表示當前進程的進程號。
-process.platform：返回一個字符串，表示當前的操作系統，比如Linux。
-process.title：返回一個字符串，默認值為node，可以自定義該值。
-process.version：返回一個字符串，表示當前使用的 Node 版本，比如v7.10.0。
-```
+- process.argv：返回一個數組，成員是當前進程的所有命令行參數。
+- process.env：返回一個對象，成員為當前 Shell 的環境變量，比如 process.env.HOME。
+- process.installPrefix：返回一個字符串，表示 Node 安裝路徑的前綴，比如/usr/local。相應地，Node 的執行文件目錄為/usr/local/bin/node。
+- process.pid：返回一個數字，表示當前進程的進程號。
+- process.platform：返回一個字符串，表示當前的操作系統，比如 Linux。
+- process.title：返回一個字符串，默認值為 node，可以自定義該值。
+- process.version：返回一個字符串，表示當前使用的 Node 版本，比如 v7.10.0。
 
 `process`對像還有一些屬性，用來指向 Shell 提供的接口。
 
@@ -144,17 +142,15 @@ $ NODE_ENV=production node app.js
 
 process 對象提供以下方法：
 
-```js
-process.chdir()：切換工作目錄到指定目錄。
-process.cwd()：返回運行當前腳本的工作目錄的路徑。
-process.exit()：退出當前進程。
-process.getgid()：返回當前進程的組ID（數值）。
-process.getuid()：返回當前進程的用戶ID（數值）。
-process.nextTick()：指定回調函數在當前執行棧的尾部、下一次Event Loop之前執行。
-process.on()：監聽事件。
-process.setgid()：指定當前進程的組，可以使用數字ID，也可以使用字符串ID。
-process.setuid()：指定當前進程的用戶，可以使用數字ID，也可以使用字符串ID。
-```
+- process.chdir()：切換工作目錄到指定目錄。
+- process.cwd()：返回運行當前腳本的工作目錄的路徑。
+- process.exit()：退出當前進程。
+- process.getgid()：返回當前進程的組 ID（數值）。
+- process.getuid()：返回當前進程的用戶 ID（數值）。
+- process.nextTick()：指定回調函數在當前執行棧的尾部、下一次 Event Loop 之前執行。
+- process.on()：監聽事件。
+- process.setgid()：指定當前進程的組，可以使用數字 ID，也可以使用字符串 ID。
+- process.setuid()：指定當前進程的用戶，可以使用數字 ID，也可以使用字符串 ID。
 
 ### process.cwd()，process.chdir()
 
@@ -260,12 +256,10 @@ setTimeout(function() {
 
 `process`支持的事件還有下面這些。
 
-```js
-data事件：數據輸出輸入時觸發
-SIGINT事件：接收到系統信號SIGINT時觸發，主要是用戶按Ctrl + c時觸發。
-SIGTERM事件：系統發出進程終止信號SIGTERM時觸發
-exit事件：進程退出前觸發
-```
+- data 事件：數據輸出輸入時觸發
+- SIGINT 事件：接收到系統信號 SIGINT 時觸發，主要是用戶按 Ctrl + c 時觸發。
+- SIGTERM 事件：系統發出進程終止信號 SIGTERM 時觸發
+- exit 事件：進程退出前觸發
 
 ```js
 process.on('SIGINT', function() {
@@ -429,13 +423,11 @@ process.on('SIGINT', function() {
 
 進程退出時，會返回一個整數值，表示退出時的狀態。這個整數值就叫做退出碼。下面是常見的 Node 進程退出碼。
 
-```js
-0，正常退出
-1，發生未捕獲錯誤
-5，V8執行錯誤
-8，不正確的參數
-128 + 信號值，如果Node接受到退出信號（比如SIGKILL或SIGHUP），它的退出碼就是128加上信號值。由於128的二進制形式是10000000, 所以退出碼的後七位就是信號值。
-```
+- 0，正常退出
+- 1，發生未捕獲錯誤
+- 5，V8 執行錯誤
+- 8，不正確的參數
+- 128 + 信號值，如果 Node 接受到退出信號（比如 SIGKILL 或 SIGHUP），它的退出碼就是 128 加上信號值。由於 128 的二進制形式是 10000000, 所以退出碼的後七位就是信號值。
 
 Bash 可以使用環境變量\$?，獲取上一步操作的退出碼。
 
