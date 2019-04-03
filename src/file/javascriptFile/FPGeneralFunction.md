@@ -150,10 +150,10 @@ var ratingIsFive = newCourseList.filter(course => course.rating === 5);
 
 如果我想要取出所有 rating 是 5 的所有 course title
 
-```ja
+```js
 var ratingIsFive = newCourseList
-                   .filter((course) => course.rating === 5)
-                   .map(course => course.title);
+	.filter(course => course.rating === 5)
+	.map(course => course.title);
 ```
 
 ## ConcatAll
