@@ -13,9 +13,8 @@
 如果只有單筆，外層則需要寬度限制它，`<Card>` 有往右推`25px`，可再自行清除
 
 ```js
+// 限制寬
 <div style={{ width: '300px' }}>
-	{' '}
-	// 限制寬
 	<Card
 		key={data[0].index}
 		link={data[0].link}
