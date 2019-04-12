@@ -18,7 +18,10 @@ export const withPinnedTasks = [
 	{ id: 6, title: 'Task 6 (pinned)', state: 'TASK_PINNED' },
 ];
 
-const TaskListStories = storiesOf('UI Components|TaskList', module);
+const TaskListStories = storiesOf(
+	'UI Components|React Components/TaskList',
+	module
+);
 
 TaskListStories.addDecorator(story => (
 	<div style={{ padding: '3rem' }}>{story()}</div>

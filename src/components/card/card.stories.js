@@ -4,7 +4,7 @@ import Card from './card';
 import readme from './readme.md';
 import { data } from './cardData';
 
-const card = storiesOf('UI Components|小名片', module);
+const card = storiesOf('UI Components|React Components/小名片', module);
 
 card
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)

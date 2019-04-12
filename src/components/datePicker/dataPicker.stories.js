@@ -15,7 +15,10 @@ export const actions = {
 	submitEditable: action('submitEditable'),
 };
 
-const dataPicker = storiesOf('UI Components|Popover時間選擇器', module);
+const dataPicker = storiesOf(
+	'UI Components|React Components/Popover時間選擇器',
+	module
+);
 
 dataPicker
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)

@@ -8,7 +8,7 @@ const submit = () => {
 	console.log('ok! submit');
 };
 
-const modal = storiesOf('UI Components|Modal 對話框', module);
+const modal = storiesOf('UI Components|React Components/Modal 對話框', module);
 
 modal
 	.addDecorator(story => <div>{story()}</div>)

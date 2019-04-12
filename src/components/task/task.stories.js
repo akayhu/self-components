@@ -16,7 +16,7 @@ export const actions = {
 	onArchiveTask: action('onArchiveTask'),
 };
 
-const TaskStories = storiesOf('UI Components|Task', module);
+const TaskStories = storiesOf('UI Components|React Components/Task', module);
 
 TaskStories.addDecorator(story => (
 	<div style={{ padding: '3rem' }}>{story()}</div>
