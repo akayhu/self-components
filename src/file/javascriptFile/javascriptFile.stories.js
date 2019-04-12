@@ -13,6 +13,7 @@ import es6Module from './es6Module.md';
 import closure from './closure.md';
 import FPBasicConcept from './FPBasicConcept.md';
 import FPGeneralFunction from './FPGeneralFunction.md';
+import es6Class from './es6Class.md';
 
 const javascriptFile = storiesOf('筆記|Javascript', module);
 
@@ -22,6 +23,7 @@ javascriptFile
 	.add('JavaScript 七種陣列的處理方法', doc(arrayApproach), {
 		notes: { markdown: arrayApproach },
 	})
+	.add('ES6 Class(類別)', doc(es6Class), { notes: { markdown: es6Class } })
 	.add(
 		'JavaScript：使用 Array.map、Object.values 和 Object.keys 處理一連串的資料',
 		doc(arrayObject),
