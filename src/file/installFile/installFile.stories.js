@@ -8,6 +8,7 @@ import gitInstall from './gitInstall.md';
 import onlineLearning from './onlineLearning.md';
 import travisCi from './travis-ci.md';
 import vsCode from './vsCode.md';
+import phpInstall from './phpInstall.md';
 
 const installFile = storiesOf('筆記|環境安裝與學習資源', module);
 
@@ -16,6 +17,9 @@ installFile
 	.add('安裝 React 開發環境', doc(react), { notes: { markdown: react } })
 	.add('安裝 Storybook 環境', doc(storybook), {
 		notes: { markdown: storybook },
+	})
+	.add('安裝 PHP Laravel 開發環境', doc(phpInstall), {
+		notes: { markdown: phpInstall },
 	})
 	.add('Apple Mac 安裝 Git 教學', doc(gitInstall), {
 		notes: { markdown: gitInstall },
