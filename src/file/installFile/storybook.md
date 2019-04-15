@@ -3,21 +3,25 @@
 ## 『自己的 Storybook』安裝相關 Storybook 套件升版
 
 ```js
-// 2019/4/2 devDependencies storybook 升版
+// 2019/4/15 devDependencies storybook 升版
 
-@storybook/addon-actions      ^5.0.5  →  ^5.0.6
-@storybook/addon-backgrounds  ^5.0.5  →  ^5.0.6
-@storybook/addon-centered     ^5.0.5  →  ^5.0.6
-@storybook/addon-jest         ^5.0.5  →  ^5.0.6
-@storybook/addon-knobs        ^5.0.5  →  ^5.0.6
-@storybook/addon-links        ^5.0.5  →  ^5.0.6
-@storybook/addon-notes        ^5.0.5  →  ^5.0.6
-@storybook/addon-options      ^5.0.5  →  ^5.0.6
-@storybook/addon-storyshots   ^5.0.5  →  ^5.0.6
-@storybook/addon-storysource  ^5.0.5  →  ^5.0.6
-@storybook/addon-viewport     ^5.0.5  →  ^5.0.6
-@storybook/addons             ^5.0.5  →  ^5.0.6
-@storybook/react              ^5.0.5  →  ^5.0.6
+@storybook/addon-a11y                   ^5.0.6  →  ^5.0.8
+@storybook/addon-actions                ^5.0.6  →  ^5.0.8
+@storybook/addon-backgrounds            ^5.0.6  →  ^5.0.8
+@storybook/addon-centered               ^5.0.6  →  ^5.0.8
+@storybook/addon-jest                   ^5.0.6  →  ^5.0.8
+@storybook/addon-knobs                  ^5.0.6  →  ^5.0.8
+@storybook/addon-links                  ^5.0.6  →  ^5.0.8
+@storybook/addon-notes                  ^5.0.6  →  ^5.0.8
+@storybook/addon-options                ^5.0.6  →  ^5.0.8
+@storybook/addon-storyshots             ^5.0.6  →  ^5.0.8
+@storybook/addon-storysource            ^5.0.6  →  ^5.0.8
+@storybook/addon-viewport               ^5.0.6  →  ^5.0.8
+@storybook/addons                       ^5.0.6  →  ^5.0.8
+@storybook/react                        ^5.0.6  →  ^5.0.8
+storybook-addon-react-docgen            ^1.2.0  →  ^1.2.1
+storybook-addon-styled-component-theme  ^1.1.1  →  ^1.2.1
+storybook-readme                        ^5.0.1  →  ^5.0.2
 
 // 目前 "storybook-addon-react-docgen": "^1.1.5" 版本之後套件 console.log 會噴錯，導致 propType 與 description 會抓不到資料。須待查問題
 ```
