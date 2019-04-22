@@ -32,7 +32,7 @@
 >
 > 像素是靜態測量，而百分比和 EM 是相對測量。EM 或百分比的大小取決於其父級。如果正文的文本大小是 16 像素，那麼 150％或 1.5 EM 將是 24 像素（1.5 \* 16）。查看 CSS 單位以獲取更多測量單位。
 
-- 如果不是以 16px 為基準，可至[這裡](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)進行查詢。
+如果不是以 16px 為基準，可至[這裡](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)進行查詢。
 
 ## 補充
 

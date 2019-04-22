@@ -103,7 +103,7 @@
 			@content;
 		}
 	} @else if $media == 568 {
-		// 、iPhone 5/SE(橫)
+		// iPhone 5/SE(橫)
 		@media only screen and (max-width: 568px) {
 			@content;
 		}
