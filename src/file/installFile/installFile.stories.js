@@ -9,6 +9,7 @@ import onlineLearning from './onlineLearning.md';
 import travisCi from './travis-ci.md';
 import vsCode from './vsCode.md';
 import phpInstall from './phpInstall.md';
+import gitSSHConnection from './gitSSHConnection.md';
 
 const installFile = storiesOf('筆記|環境安裝與學習資源', module);
 
@@ -26,6 +27,9 @@ installFile
 	})
 	.add('Apple Mac 安裝 Ruby 教學', doc(rubyInstall), {
 		notes: { markdown: rubyInstall },
+	})
+	.add('Git 建立 SSH Key 教學', doc(gitSSHConnection), {
+		notes: { markdown: gitSSHConnection },
 	})
 	.add('GitHub Pages 與 Travis CI 串接教學', doc(travisCi), {
 		notes: { markdown: travisCi },
