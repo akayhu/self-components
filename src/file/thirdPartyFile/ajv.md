@@ -9,6 +9,36 @@ npm 網址：[https://www.npmjs.com/package/ajv](https://www.npmjs.com/package/
 參考官方文件
 
 ```js
+/**
+ * 檢查 data 是否符合 schema
+ * @param {object} dataModel
+ * @param {object} dataModelSchema
+ * @returns {boolean}
+ */
+const validateDataModel = (dataModel = {}, dataModelSchema) => {
+	const ajv = new Ajv();
+
+	if (!dataModelSchema || !ajv.validateSchema(dataModelSchema)) {
+		console.error(
+			'[validateDataModel] invalid dataModelSchema: ',
+			dataModelSchema
+		);
+		return false;
+	}
+
+	// 檢查 schema 格式 & 驗證 data model
+	const result = ajv.validate(dataModelSchema, dataModel);
+	if (!result) {
+		console.warn(
+			`[validateDataModel] invalid dataModel | error: ${ajv.errorsText()} | dataModel:`,
+			dataModel
+		);
+	}
+	return result;
+};
+```
+
+```js
 var ajv = new Ajv({ removeAdditional: true });
 var schema = {
 	additionalProperties: false,
