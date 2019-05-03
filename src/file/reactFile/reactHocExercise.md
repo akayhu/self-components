@@ -1,4 +1,4 @@
-# React HOC(Higher Order Components) 練習
+# React Higher Order Components (高階組件) 練習
 
 - 需安裝 antd 套件
 

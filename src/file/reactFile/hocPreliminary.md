@@ -1,4 +1,4 @@
-# React Higher Order Components 初探觀念
+# React Higher Order Components (高階組件) 初探觀念
 
 高階組件是一個函數，能夠接受一個組件並返回一個新的組件。
 

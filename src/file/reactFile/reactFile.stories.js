@@ -7,6 +7,7 @@ import hocPreliminary from './hocPreliminary.md';
 import reactForm from './reactForm.md';
 import reactTodoList from './reactTodoList.md';
 import reactHocExercise from './reactHocExercise.md';
+import hocApi from './hocApi.md';
 
 const reactFile = storiesOf('筆記|React', module);
 
@@ -21,7 +22,8 @@ reactFile
 	.add('React 對表單元素的prop設置值', doc(reactForm), {
 		notes: { markdown: reactForm },
 	})
-	.add('React Higher Order Components 初探觀念', doc(hocPreliminary), {
+	.add('React HOC API', doc(hocApi), { notes: { markdown: hocApi } })
+	.add('React HOC 初探觀念', doc(hocPreliminary), {
 		notes: { markdown: hocPreliminary },
 	})
 	.add('React HOC 練習', doc(reactHocExercise), {
