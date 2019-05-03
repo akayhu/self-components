@@ -14,15 +14,33 @@ import autosize from './autosize.md';
 import reactImageCrop from './reactImageCrop.md';
 import localStorage from './localStorage.md';
 import reactDnD from './reactDnD.md';
+import draftJsPluginsEditor from './draftJsPluginsEditor.md';
+import draftJsInlineToolbarPlugin from './draftJsInlineToolbarPlugin.md';
+import dompurify from './dompurify.md';
+import draftJs from './draftJs.md';
+import draftConvert from './draftConvert.md';
+import ajv from './ajv.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
 reactFile
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
+	.add('ajv', doc(ajv), { notes: { markdown: ajv } })
 	.add('Ant Design', doc(antd), {
 		notes: { markdown: antd },
 	})
 	.add('autosize', doc(autosize), { notes: { markdown: autosize } })
+	.add('draft-js', doc(draftJs), { notes: { markdown: draftJs } })
+	.add('draft-convert', doc(draftConvert), {
+		notes: { markdown: draftConvert },
+	})
+	.add('draft-js-plugins-editor', doc(draftJsPluginsEditor), {
+		notes: { markdown: draftJsPluginsEditor },
+	})
+	.add('draft-js-inline-toolbar-plugin', doc(draftJsInlineToolbarPlugin), {
+		notes: { markdown: draftJsInlineToolbarPlugin },
+	})
+	.add('dompurify', doc(dompurify), { notes: { markdown: dompurify } })
 	.add('localStorage', doc(localStorage), { notes: { markdown: localStorage } })
 	.add('lorem-ipsum', doc(loremIpsum), { notes: { markdown: loremIpsum } })
 	.add('Material-UI ', doc(materialUi), { notes: { markdown: materialUi } })
