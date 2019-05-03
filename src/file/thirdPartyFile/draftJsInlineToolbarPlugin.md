@@ -10,6 +10,7 @@ npm 網址：[https://www.npmjs.com/package/draft-js-inline-toolbar-plugin](http
 
 ```js
 import createInlineToolbarPlugin from 'draft-js-inline-toolbar-plugin';
+import 'draft-js-inline-toolbar-plugin/lib/plugin.css';
 
 const toolbarPlugin = createInlineToolbarPlugin();
 ```

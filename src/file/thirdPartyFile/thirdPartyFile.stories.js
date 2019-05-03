@@ -20,6 +20,13 @@ import dompurify from './dompurify.md';
 import draftJs from './draftJs.md';
 import draftConvert from './draftConvert.md';
 import ajv from './ajv.md';
+import draftJsButtons from './draftJsButtons.md';
+import decorateComponentWithProps from './decorateComponentWithProps.md';
+import reactRouterDom from './reactRouterDom.md';
+import reactCssModules from './reactCssModules.md';
+import htmlparser2 from './htmlparser2.md';
+import reactRouter from './reactRouter.md';
+import lodash from './lodash.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
@@ -30,9 +37,15 @@ reactFile
 		notes: { markdown: antd },
 	})
 	.add('autosize', doc(autosize), { notes: { markdown: autosize } })
+	.add('decorate-component-with-props', doc(decorateComponentWithProps), {
+		notes: { markdown: decorateComponentWithProps },
+	})
 	.add('draft-js', doc(draftJs), { notes: { markdown: draftJs } })
 	.add('draft-convert', doc(draftConvert), {
 		notes: { markdown: draftConvert },
+	})
+	.add('draft-js-buttons', doc(draftJsButtons), {
+		notes: { markdown: draftJsButtons },
 	})
 	.add('draft-js-plugins-editor', doc(draftJsPluginsEditor), {
 		notes: { markdown: draftJsPluginsEditor },
@@ -41,6 +54,8 @@ reactFile
 		notes: { markdown: draftJsInlineToolbarPlugin },
 	})
 	.add('dompurify', doc(dompurify), { notes: { markdown: dompurify } })
+	.add('htmlparser2', doc(htmlparser2), { notes: { markdown: htmlparser2 } })
+	.add('lodash', doc(lodash), { notes: { markdown: lodash } })
 	.add('localStorage', doc(localStorage), { notes: { markdown: localStorage } })
 	.add('lorem-ipsum', doc(loremIpsum), { notes: { markdown: loremIpsum } })
 	.add('Material-UI ', doc(materialUi), { notes: { markdown: materialUi } })
@@ -56,6 +71,13 @@ reactFile
 	.add('recompose', doc(recompose), { notes: { markdown: recompose } })
 	.add('react-Image-Crop', doc(reactImageCrop), {
 		notes: { markdown: reactImageCrop },
+	})
+	.add('react-css-modules', doc(reactCssModules), {
+		notes: { markdown: reactCssModules },
+	})
+	.add('react-router', doc(reactRouter), { notes: { markdown: reactRouter } })
+	.add('react-router-dom', doc(reactRouterDom), {
+		notes: { markdown: reactRouterDom },
 	})
 	.add('styled-Components', doc(styledComponents), {
 		notes: { markdown: styledComponents },
