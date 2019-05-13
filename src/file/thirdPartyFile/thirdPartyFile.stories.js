@@ -27,13 +27,32 @@ import reactCssModules from './reactCssModules.md';
 import htmlparser2 from './htmlparser2.md';
 import reactRouter from './reactRouter.md';
 import lodash from './lodash.md';
+import graphqlTag from './graphqlTag.md';
+import apolloClient from './apolloClient.md';
+import apolloCacheInmemory from './apolloCacheInmemory.md';
+import apolloLinkHttp from './apolloLinkHttp.md';
+import apolloLinkError from './apolloLinkError.md';
+import apolloLink from './apolloLink.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
 reactFile
 	.addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
 	.add('ajv', doc(ajv), { notes: { markdown: ajv } })
-	.add('Ant Design', doc(antd), {
+	.add('apollo-client', doc(apolloClient), {
+		notes: { markdown: apolloClient },
+	})
+	.add('apollo-cache-inmemory', doc(apolloCacheInmemory), {
+		notes: { markdown: apolloCacheInmemory },
+	})
+	.add('apollo-link-http', doc(apolloLinkHttp), {
+		notes: { markdown: apolloLinkHttp },
+	})
+	.add('apollo-link-error', doc(apolloLinkError), {
+		notes: { markdown: apolloLinkError },
+	})
+	.add('apollo-link', doc(apolloLink), { notes: { markdown: apolloLink } })
+	.add('ant Design', doc(antd), {
 		notes: { markdown: antd },
 	})
 	.add('autosize', doc(autosize), { notes: { markdown: autosize } })
@@ -54,12 +73,13 @@ reactFile
 		notes: { markdown: draftJsInlineToolbarPlugin },
 	})
 	.add('dompurify', doc(dompurify), { notes: { markdown: dompurify } })
+	.add('graphql-tag', doc(graphqlTag), { notes: { markdown: graphqlTag } })
 	.add('htmlparser2', doc(htmlparser2), { notes: { markdown: htmlparser2 } })
 	.add('lodash', doc(lodash), { notes: { markdown: lodash } })
 	.add('localStorage', doc(localStorage), { notes: { markdown: localStorage } })
 	.add('lorem-ipsum', doc(loremIpsum), { notes: { markdown: loremIpsum } })
-	.add('Material-UI ', doc(materialUi), { notes: { markdown: materialUi } })
-	.add('Moment', doc(moment), { notes: { markdown: moment } })
+	.add('material-UI ', doc(materialUi), { notes: { markdown: materialUi } })
+	.add('moment', doc(moment), { notes: { markdown: moment } })
 	.add('prop-types', doc(propTypes), { notes: { markdown: propTypes } })
 	.add('react-Autocomplete', doc(reactAutocomplete), {
 		notes: { markdown: reactAutocomplete },
