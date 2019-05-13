@@ -33,6 +33,16 @@ import apolloCacheInmemory from './apolloCacheInmemory.md';
 import apolloLinkHttp from './apolloLinkHttp.md';
 import apolloLinkError from './apolloLinkError.md';
 import apolloLink from './apolloLink.md';
+import qrcode from './qrcode.md';
+import uuid from './uuid.md';
+import xstate from './xstate.md';
+import reactApollo from './reactApollo.md';
+import reactHelmet from './reactHelmet.md';
+import reactStickyEl from './reactStickyEl.md';
+import reactAddonsShallowCompare from './reactAddonsShallowCompare.md';
+import html2canvas from './html2canvas.md';
+import bezierEasing from './bezierEasing.md';
+import reactScrollchor from './reactScrollchor.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
@@ -56,6 +66,9 @@ reactFile
 		notes: { markdown: antd },
 	})
 	.add('autosize', doc(autosize), { notes: { markdown: autosize } })
+	.add('bezier-easing', doc(bezierEasing), {
+		notes: { markdown: bezierEasing },
+	})
 	.add('decorate-component-with-props', doc(decorateComponentWithProps), {
 		notes: { markdown: decorateComponentWithProps },
 	})
@@ -75,22 +88,35 @@ reactFile
 	.add('dompurify', doc(dompurify), { notes: { markdown: dompurify } })
 	.add('graphql-tag', doc(graphqlTag), { notes: { markdown: graphqlTag } })
 	.add('htmlparser2', doc(htmlparser2), { notes: { markdown: htmlparser2 } })
+	.add('html2canvas', doc(html2canvas), { notes: { markdown: html2canvas } })
 	.add('lodash', doc(lodash), { notes: { markdown: lodash } })
 	.add('localStorage', doc(localStorage), { notes: { markdown: localStorage } })
 	.add('lorem-ipsum', doc(loremIpsum), { notes: { markdown: loremIpsum } })
 	.add('material-UI ', doc(materialUi), { notes: { markdown: materialUi } })
 	.add('moment', doc(moment), { notes: { markdown: moment } })
 	.add('prop-types', doc(propTypes), { notes: { markdown: propTypes } })
+	.add('qrcode.react', doc(qrcode), { notes: { markdown: qrcode } })
+	.add('react-apollo', doc(reactApollo), { notes: { markdown: reactApollo } })
 	.add('react-Autocomplete', doc(reactAutocomplete), {
 		notes: { markdown: reactAutocomplete },
+	})
+	.add('react-addons-shallow-compare', doc(reactAddonsShallowCompare), {
+		notes: { markdown: reactAddonsShallowCompare },
 	})
 	.add('react-device-detect', doc(reactDeviceDetect), {
 		notes: { markdown: reactDeviceDetect },
 	})
 	.add('react DnD', doc(reactDnD), { notes: { markdown: reactDnD } })
 	.add('recompose', doc(recompose), { notes: { markdown: recompose } })
+	.add('react-helmet', doc(reactHelmet), { notes: { markdown: reactHelmet } })
 	.add('react-Image-Crop', doc(reactImageCrop), {
 		notes: { markdown: reactImageCrop },
+	})
+	.add('react-scrollchor', doc(reactScrollchor), {
+		notes: { markdown: reactScrollchor },
+	})
+	.add('react-sticky-el', doc(reactStickyEl), {
+		notes: { markdown: reactStickyEl },
 	})
 	.add('react-css-modules', doc(reactCssModules), {
 		notes: { markdown: reactCssModules },
@@ -101,4 +127,6 @@ reactFile
 	})
 	.add('styled-Components', doc(styledComponents), {
 		notes: { markdown: styledComponents },
-	});
+	})
+	.add('uuid', doc(uuid), { notes: { markdown: uuid } })
+	.add('xstate', doc(xstate), { notes: { markdown: xstate } });
