@@ -43,6 +43,7 @@ import reactAddonsShallowCompare from './reactAddonsShallowCompare.md';
 import html2canvas from './html2canvas.md';
 import bezierEasing from './bezierEasing.md';
 import reactScrollchor from './reactScrollchor.md';
+import momentTimezone from './momentTimezone.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
@@ -94,6 +95,9 @@ reactFile
 	.add('lorem-ipsum', doc(loremIpsum), { notes: { markdown: loremIpsum } })
 	.add('material-UI ', doc(materialUi), { notes: { markdown: materialUi } })
 	.add('moment', doc(moment), { notes: { markdown: moment } })
+	.add('moment-timezone', doc(momentTimezone), {
+		notes: { markdown: momentTimezone },
+	})
 	.add('prop-types', doc(propTypes), { notes: { markdown: propTypes } })
 	.add('qrcode.react', doc(qrcode), { notes: { markdown: qrcode } })
 	.add('react-apollo', doc(reactApollo), { notes: { markdown: reactApollo } })
