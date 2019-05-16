@@ -44,6 +44,7 @@ import html2canvas from './html2canvas.md';
 import bezierEasing from './bezierEasing.md';
 import reactScrollchor from './reactScrollchor.md';
 import momentTimezone from './momentTimezone.md';
+import reactHtmlParser from './reactHtmlParser.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
@@ -115,6 +116,9 @@ reactFile
 	.add('react-helmet', doc(reactHelmet), { notes: { markdown: reactHelmet } })
 	.add('react-Image-Crop', doc(reactImageCrop), {
 		notes: { markdown: reactImageCrop },
+	})
+	.add('react-html-parser', doc(reactHtmlParser), {
+		notes: { markdown: reactHtmlParser },
 	})
 	.add('react-scrollchor', doc(reactScrollchor), {
 		notes: { markdown: reactScrollchor },
