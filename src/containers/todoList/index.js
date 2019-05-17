@@ -62,12 +62,10 @@ TodoListMain.propTypes = {
 	editTodo: PropTypes.func,
 };
 
-const mapStateToProps = state => {
-	return {
-		todoList: state.todoData,
-		showFilter: state.viewFilter,
-	};
-};
+const mapStateToProps = (state, props) => ({
+	todoList: state.todoData,
+	showFilter: state.viewFilter,
+});
 
 const action = {
 	addTodo,

@@ -45,6 +45,7 @@ import bezierEasing from './bezierEasing.md';
 import reactScrollchor from './reactScrollchor.md';
 import momentTimezone from './momentTimezone.md';
 import reactHtmlParser from './reactHtmlParser.md';
+import pathToRegexp from './pathToRegexp.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
@@ -100,6 +101,9 @@ reactFile
 		notes: { markdown: momentTimezone },
 	})
 	.add('prop-types', doc(propTypes), { notes: { markdown: propTypes } })
+	.add('path-to-regexp', doc(pathToRegexp), {
+		notes: { markdown: pathToRegexp },
+	})
 	.add('qrcode.react', doc(qrcode), { notes: { markdown: qrcode } })
 	.add('react-apollo', doc(reactApollo), { notes: { markdown: reactApollo } })
 	.add('react-Autocomplete', doc(reactAutocomplete), {
