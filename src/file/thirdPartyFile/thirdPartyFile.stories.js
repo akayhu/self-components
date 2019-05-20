@@ -46,6 +46,7 @@ import reactScrollchor from './reactScrollchor.md';
 import momentTimezone from './momentTimezone.md';
 import reactHtmlParser from './reactHtmlParser.md';
 import pathToRegexp from './pathToRegexp.md';
+import flag from './flag.md';
 
 const reactFile = storiesOf('筆記|第三方套件', module);
 
@@ -89,6 +90,7 @@ reactFile
 		notes: { markdown: draftJsInlineToolbarPlugin },
 	})
 	.add('dompurify', doc(dompurify), { notes: { markdown: dompurify } })
+	.add('flag', doc(flag), { notes: { markdown: flag } })
 	.add('graphql-tag', doc(graphqlTag), { notes: { markdown: graphqlTag } })
 	.add('htmlparser2', doc(htmlparser2), { notes: { markdown: htmlparser2 } })
 	.add('html2canvas', doc(html2canvas), { notes: { markdown: html2canvas } })
