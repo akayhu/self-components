@@ -1,4 +1,4 @@
-# vue router
+# Vue Router
 
 官方網址：[https://router.vuejs.org/zh/installation.html](https://router.vuejs.org/zh/installation.html)
 
@@ -70,7 +70,7 @@ new Vue({
     <router-link :to="{path: '/hello'}">Hello</router-link>
     <router-link :to="{name: 'c2f'}">CtoF</router-link>
 
-    // 轉跳後所載入的 component 最後會顯示在此 //
+    // 轉跳後所載入的 component 最後會顯示在此
     <router-view></router-view>
   <div>
 </template>
