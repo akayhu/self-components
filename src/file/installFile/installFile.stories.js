@@ -10,6 +10,7 @@ import travisCi from './travis-ci.md';
 import vsCode from './vsCode.md';
 import phpInstall from './phpInstall.md';
 import gitSSHConnection from './gitSSHConnection.md';
+import vueInstall from './vueInstall.md';
 
 const installFile = storiesOf('筆記|環境安裝與學習資源', module);
 
@@ -18,6 +19,9 @@ installFile
 	.add('安裝 React 開發環境', doc(react), { notes: { markdown: react } })
 	.add('安裝 Storybook 環境', doc(storybook), {
 		notes: { markdown: storybook },
+	})
+	.add('安裝 Vue 開發環境', doc(vueInstall), {
+		notes: { markdown: vueInstall },
 	})
 	.add('安裝 PHP Laravel 開發環境', doc(phpInstall), {
 		notes: { markdown: phpInstall },
