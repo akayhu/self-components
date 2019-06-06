@@ -1,0 +1,18 @@
+{
+  "main.css": "/self-components/main.css",
+  "main.js": "/self-components/main.0dab5d9b629b81e9c37d.bundle.js",
+  "main.css.map": "/self-components/main.css.map",
+  "main.js.map": "/self-components/main.0dab5d9b629b81e9c37d.bundle.js.map",
+  "runtime~main.js": "/self-components/runtime~main.0dab5d9b629b81e9c37d.bundle.js",
+  "runtime~main.js.map": "/self-components/runtime~main.0dab5d9b629b81e9c37d.bundle.js.map",
+  "vendors~main.css": "/self-components/vendors~main.css",
+  "vendors~main.js": "/self-components/vendors~main.0dab5d9b629b81e9c37d.bundle.js",
+  "vendors~main.css.map": "/self-components/vendors~main.css.map",
+  "vendors~main.js.map": "/self-components/vendors~main.0dab5d9b629b81e9c37d.bundle.js.map",
+  "iframe.html": "/self-components/iframe.html",
+  "precache-manifest.2d72998579a11cfde45fa14a847a6e16.js": "/self-components/precache-manifest.2d72998579a11cfde45fa14a847a6e16.js",
+  "service-worker.js": "/self-components/service-worker.js",
+  "static/media/bg.png": "/self-components/static/media/bg.4bb9ac51.png",
+  "static/media/cover.jpg": "/self-components/static/media/cover.9be246a0.jpg",
+  "static/media/style.css": "/self-components/static/media/percolate.d1d0b39a.svg"
+}
