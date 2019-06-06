@@ -41,6 +41,15 @@ var vm = new Vue({
 });
 ```
 
+- `beforeCreate`: 實例初始化立即叫用，這時還未創建實例，所以任何 Vue 實體中的設定(例如: `data` )都還未配置。
+- `created`: 完成創建實例，這時 Vue 實體中的配置除了 `$el` 外已全部配置，而 `$el` 要在掛載模板後才會配置。
+- `beforeMount`: 在 Vue 實體中的定義被掛載到目標元素之前叫用，這時的 `$el` 會是還未被 Vue 實體中的定義渲染的初始設定模板。
+- `mounted`: Vue 實體上的設置已經安裝上模板，這時的 `$el` 是已經藉由實體中的定義渲染而成的真正的頁面。
+- `beforeUpdate`: 當實體中的 data 產生變化後或是執行 [vm.\$forceUpdate()](https://vuejs.org/v2/api/#vm-forceUpdate) 叫用，這時的頁面還未被重渲染為改變後的畫面。
+- `updated`: 在重新渲染頁面後叫用，這時的頁面已經被重渲染成改變後的畫面。
+- `beforeDestroy`: 在此實體被銷毀前時叫用，這時實體還是擁有完整的功能。
+- `destroyed`: 此實體被銷毀後叫用，這時實體中的任何定義( `data` 、 `methods`...等)都已被解除綁定，代表在此做的任何操作都會失效。
+
 ## beforeCreate, created
 
 打開 console tab，一開始就會看到
